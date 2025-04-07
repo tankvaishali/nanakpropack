@@ -1,0 +1,15 @@
+.Aboutbtn {
+    background-color: rgb(17, 107, 107);
+    box-shadow: 3px -3px 3px rgb(11, 67, 67);
+}
+
+.tittlebox {
+    background-color: rgb(17, 107, 107);
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .col-lg-4 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}

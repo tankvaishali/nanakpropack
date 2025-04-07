@@ -1,5 +1,4 @@
 import React from 'react'
-import "../../assets/Css/AboutSec.css"
 import { TiArrowRight } from 'react-icons/ti'
 import { HiOutlineHandThumbUp } from 'react-icons/hi2'
 import { MdOutlineSupportAgent } from 'react-icons/md'
