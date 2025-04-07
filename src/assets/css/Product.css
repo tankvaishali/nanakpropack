@@ -1,0 +1,26 @@
+/* ProductData start */
+body {
+  width: 100%;
+  height: auto;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/003/621/544/non_2x/abstract-grey-and-white-geometric-stylish-modern-background-design-vector.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100vh;
+}
+.Productbtn {
+  background-color: rgb(17, 107, 107);
+  box-shadow: 3px -3px 3px rgb(11, 67, 67);
+}
+.form-control {
+  box-shadow: none !important;
+}
+.productTab {
+  background-color: var(--green) !important;
+  border: 3px solid var(--green) !important;
+  transition: all 0.4s ease-in-out;
+}
+.productTab:hover {
+  background-color: rgba(108, 117, 125, 1) !important;
+  border: 3px solid black !important;
+}
+/* ProductData end */
