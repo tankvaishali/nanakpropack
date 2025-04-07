@@ -1,11 +1,13 @@
 import React from 'react';
+import HOC from '../HOC';
+import AboutSec from './AboutSec';
 
 function HomePage() {
   return (
-    <div>
-      
-    </div>
+<>
+<AboutSec/>
+</>
   );
 }
 
-export default HomePage;
+export default HOC(HomePage);

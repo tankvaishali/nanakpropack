@@ -1,11 +1,11 @@
 import React from 'react';
 
-function HOC() {
+function HOC(Component) {
     function NewComponent() {
         return (
-            <div>
-              
-            </div>
+         <>
+         <Component/>
+         </>
           );
     }
   return NewComponent
