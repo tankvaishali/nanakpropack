@@ -36,19 +36,19 @@ function AboutSec() {
                             </div>
                         </div>
                         <div className='col-12 col-lg-4 col-md-6'>
-                            <div className='py-5'>
-                                <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYrnwWBbigDsbGrp6pqa66lAfBvCNpE8xmfw&s"} className='object-fit-cover w-100 h-100 rounded-5' alt="" />
+                            <div className='py-5 bglightborder'>
+                                <img src={require("../assets/images/BakeryPackagingMockup006-removebg-preview.png")} className='object-fit-cover w-100 h-100 rounded-5' alt="" />
                             </div>
                         </div>
                         <div className='col-12 col-lg-4 col-md-6'>
                             <div className='py-4'>
                                 {features.map((feature, index) => (
-                                    <div className={`tittlebox d-flex p-3 rounded-pill ${index !== 0 ? 'my-3' : ''}`} key={index}>
-                                        <div className='p-3 bg-primary rounded-5'>
+                                    <div className={`tittlebox d-flex p-3 rounded-pill shadow ${index !== 0 ? 'my-3' : ''}`} key={index}>
+                                        <div className='p-3 tittleicon rounded-5 text-dark '>
                                             {feature.icon}
                                         </div>
-                                        <div className='text-white ms-3'>
-                                            <h3>{feature.title}</h3>
+                                        <div className='text-success ms-3'>
+                                            <h3 className='fw-bold'>{feature.title}</h3>
                                             <div>{feature.description}</div>
                                         </div>
                                     </div>
