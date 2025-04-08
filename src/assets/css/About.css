@@ -60,7 +60,6 @@
   margin-bottom: 10px;
   transition: color 0.3s ease-in-out;
 }
-
 .icon-box:hover .mission-icon {
   color: #218838;
 }

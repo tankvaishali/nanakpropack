@@ -19,14 +19,13 @@ const features = [
         icon: <BiLeaf className='text-white fs-1' />,
         title: 'Eco Friendly',
         description: 'Lorem ipsum dolor sit amet.'
-    },
+    }
 ];
-
 function AboutSec() {
     return (
         <>
             <div className='py-5'>
-                <div className="container">
+                <div className="container py-5">
                     <div className='row d-flex justify-content-center align-items-center align-content-center'>
                         <div className='col-12 col-lg-4 col-md-12'>
                             <div className='py-5'>

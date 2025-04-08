@@ -21,7 +21,7 @@ icon:<FaMicrochip/>,
   ]
   return (
     <>
-      <div className="mission_bg">
+      <div className="mission_bg " >
         <div className="container py-5">
           <div className="row py-3">
             <div className="col-lg-3 col-12 col-md-6 p-5 p-md-4">
