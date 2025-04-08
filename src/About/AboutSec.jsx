@@ -25,7 +25,7 @@ const features = [
 function AboutSec() {
     return (
         <>
-            <div className='my-5'>
+            <div className='py-5'>
                 <div className="container">
                     <div className='row d-flex justify-content-center align-items-center align-content-center'>
                         <div className='col-12 col-lg-4 col-md-12'>

@@ -26,7 +26,7 @@ icon:<FaMicrochip/>,
           <div className="row py-3">
             <div className="col-lg-3 col-12 col-md-6 p-5 p-md-4">
               <div className="h-100 d-flex flex-column text-center">
-                <div className="cardcss p-4 flex-grow-1 text-white">
+                <div className="cardcss p-2 flex-grow-1 text-white">
                   <div class="serviceicon">
                     <img src={""} alt="" className="img-fluid" />
                   </div>
@@ -38,7 +38,7 @@ icon:<FaMicrochip/>,
             </div>
             <div className="col-lg-3 col-12 col-md-6 p-5 p-md-4">
               <div className="h-100 d-flex flex-column text-center">
-                <div className="cardcss p-4 flex-grow-1 text-white">
+                <div className="cardcss p-2 flex-grow-1 text-white">
                   <div class="serviceicon">
                     <img src={""} alt="" className="img-fluid" />
                   </div>
@@ -57,11 +57,11 @@ icon:<FaMicrochip/>,
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde tenetur perferendis deserunt nulla.
       </div>
 
-    <div className="row g-3 pt-4">
+    <div className="row g-3 mt-2">
       {
         counter.map((x, i) => (
           <div key={i} className="col-6 col-md-4 d-flex icon-box">
-            <div className="px-2 text-center border border-secondary p-3 w-100 d-flex flex-column justify-content-center align-items-center" style={{ borderRadius: "0px 25px 0px 25px" }}>
+            <div className=" text-center border border-secondary  w-100 d-flex flex-column justify-content-center p-2 align-items-center" style={{ borderRadius: "0px 25px 0px 25px" }}>
         <div  className="mission-icon" >  {x.icon}</div>
               <div className="text-uppercase">{x.name}</div>
             </div>
