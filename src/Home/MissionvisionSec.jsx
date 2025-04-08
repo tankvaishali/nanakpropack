@@ -1,9 +1,24 @@
 import React from 'react';
+import CountUp from 'react-countup';
 import { GiStairsGoal } from 'react-icons/gi';
 import { GoGoal } from 'react-icons/go';
 import { TiArrowRight } from 'react-icons/ti';
 
 function MissionvisionSec() {
+  let counter=[
+    {
+      count:30,
+      name:"HAPPY CUSTOMERS"
+    },
+    {
+      count:40,
+      name:"HAPPY CUSTOMERS"
+    },
+    {
+      count:80,
+      name:"HAPPY CUSTOMERS"
+    },
+  ]
   return (
     <>
       <div className="mission_bg">
@@ -34,9 +49,32 @@ function MissionvisionSec() {
               </div>
             </div>
             <div className="col-lg-6 col-12 col-md-6 p-5 p-md-4">
-              <div className="h-100 itemmision text-white p-3 p-lg-5">
+              <div className="h-100 itemmision text-white p-4">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, cupiditate.
-                <div className='text-secondary pt-2 fw-medium '> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde tenetur perferendis deserunt nulla voluptatibus recusandae ad nesciunt odio molestias!  Quidem unde tenetur perferendis deserunt nulla voluptatibus recusandae ad nesciunt odio molestias! </div>
+<div className='text-secondary pt-2 fw-medium '> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde tenetur perferendis deserunt nulla.  </div>
+<div className='row'>
+{
+  counter.map((x,i)=>{
+    return(
+      <>
+      <div className='col-6 col-md-4 p-2' >
+<div className='px-2 h-100 text-center border p-1 border-secondary' style={{borderRadius:"0px 25px 0px 25px "}}>
+<h2 className='text-success'>
+  <CountUp
+  start={0}
+  end={x.count}
+enableScrollSpy={true}
+separator=''
+/> +
+  </h2>
+<div className=' text-uppercase'> {x.name} </div>
+</div>
+</div>
+      </>
+    )
+  })
+}
+</div>
                 <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 p-2 mt-4'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> View More</button> </div>
             </div>
           </div>
