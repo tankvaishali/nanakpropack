@@ -55,12 +55,11 @@
   background-color: rgba(0, 0, 0, 0.247) !important;
 }
 .mission-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #28a745;
   margin-bottom: 10px;
   transition: color 0.3s ease-in-out;
 }
-
 .icon-box:hover .mission-icon {
   color: #218838;
 }
