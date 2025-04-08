@@ -1,99 +1,117 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-:root{
-    --green:rgb(0, 77, 33);
+:root {
+  --green: rgb(0, 77, 33);
 }
+
+/* body start */
+body {
+  width: 100%;
+  height: auto;
+  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdyZXklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100vh;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-size: cover !important;
+  }
+}
+/* body end */
 
 /* footer start */
-.footer_bg{
-    /* background:repeating-linear-gradient(90deg, transparent, #BF3200) 0% 0% / 3em 3em #000000; */
+.footer_bg {
+  /* background:repeating-linear-gradient(90deg, transparent, #BF3200) 0% 0% / 3em 3em #000000; */
 
-    background:repeating-linear-gradient(90deg, transparent, #00701D) 0% 0% / 3em 3em #000000;
-    background-size: 100px 100px;
-box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.5);
-
+  background: repeating-linear-gradient(90deg, transparent, #00701d) 0% 0% / 3em
+    3em #000000;
+  background-size: 100px 100px;
+  box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.5);
 }
 
 .footericon {
-    border: 2px solid white;
-    transition: all 0.3s ease-in-out;
-    border-radius: 10px 0px 12px 0px;
-    font-size: 19px;
-  }
-  
-  .footericon:hover {
-    border-radius: 50%;
-    border: 2px solid white;
-  }
-  
-  .facebookicon {
-    background-color: #1877f2 !important;
-  }
-  
-  .facebookicon:hover {
-    background-color: white !important;
-    color: #1877f2 !important;
-    text-shadow: 0 0 5px #1877f2 !important;
-    box-shadow: 0 0 15px 5px #1877f2 !important;
-  }
-  
-  .instaicon {
-    background-image: linear-gradient(180deg,
-        #833ab4,
-        #c13584,
-        #e1306c,
-        #f77737,
-        #ffdc80);
-  }
-  
-  .instaicon:hover {
-    background-color: white !important;
-    color: #e1306c !important;
-    background-image: none !important;
-    text-shadow: 0 0 5px #e1306c !important;
-    box-shadow: 0 0 15px 5px #e1306c !important;
-  }
-  
-  .linkicon {
-    background-color: #0077b5 !important;
-  }
-  
-  .linkicon:hover {
-    background-color: white !important;
-    color: #0077b5 !important;
-    text-shadow: 0 0 5px #0077b5 !important;
-    box-shadow: 0 0 15px 5px #0077b5 !important;
-  }
-  
-  .twittericon {
-    background-color: #1da1f2 !important;
-  }
-  
-  .twittericon:hover {
-    background-color: white !important;
-    color: #1da1f2 !important;
-    text-shadow: 0 0 5px #1da1f2 !important;
-    box-shadow: 0 0 15px 5px #1da1f2 !important;
-  }
-  
-  .linkhover {
-    color: white;
-  }
-  
-  .linkhover:hover {
-    color: rgb(194, 194, 194);
-  }
-  
-  .footerlinkicon {
-    transform: scale(1);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .linkhover:hover .footerlinkicon {
-    transform: scale(1.1) !important;
-  }
-  
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px 0px 12px 0px;
+  font-size: 19px;
+}
+
+.footericon:hover {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.facebookicon {
+  background-color: #1877f2 !important;
+}
+
+.facebookicon:hover {
+  background-color: white !important;
+  color: #1877f2 !important;
+  text-shadow: 0 0 5px #1877f2 !important;
+  box-shadow: 0 0 15px 5px #1877f2 !important;
+}
+
+.instaicon {
+  background-image: linear-gradient(
+    180deg,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #f77737,
+    #ffdc80
+  );
+}
+
+.instaicon:hover {
+  background-color: white !important;
+  color: #e1306c !important;
+  background-image: none !important;
+  text-shadow: 0 0 5px #e1306c !important;
+  box-shadow: 0 0 15px 5px #e1306c !important;
+}
+
+.linkicon {
+  background-color: #0077b5 !important;
+}
+
+.linkicon:hover {
+  background-color: white !important;
+  color: #0077b5 !important;
+  text-shadow: 0 0 5px #0077b5 !important;
+  box-shadow: 0 0 15px 5px #0077b5 !important;
+}
+
+.twittericon {
+  background-color: #1da1f2 !important;
+}
+
+.twittericon:hover {
+  background-color: white !important;
+  color: #1da1f2 !important;
+  text-shadow: 0 0 5px #1da1f2 !important;
+  box-shadow: 0 0 15px 5px #1da1f2 !important;
+}
+
+.linkhover {
+  color: white;
+}
+
+.linkhover:hover {
+  color: rgb(194, 194, 194);
+}
+
+.footerlinkicon {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.linkhover:hover .footerlinkicon {
+  transform: scale(1.1) !important;
+}
+
 /* footer end */
