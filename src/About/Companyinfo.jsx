@@ -5,7 +5,7 @@ import "../assets/css/About.css"
 import PackagingSection from './PackagingSection';
 import MissionvisionSec from './MissionvisionSec';
 
-function HomePage() {
+function Companyinfo() {
   return (
 <>
 <AboutSec/>
@@ -15,4 +15,4 @@ function HomePage() {
   );
 }
 
-export default HOC(HomePage);
+export default HOC(Companyinfo);

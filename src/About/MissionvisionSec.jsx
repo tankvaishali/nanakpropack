@@ -2,21 +2,21 @@ import React from 'react';
 import CountUp from 'react-countup';
 import { GiStairsGoal } from 'react-icons/gi';
 import { GoGoal } from 'react-icons/go';
-import { TiArrowRight } from 'react-icons/ti';
+import { FaLeaf, FaShieldAlt, FaMicrochip } from 'react-icons/fa';
 
 function MissionvisionSec() {
   let counter=[
     {
-      count:30,
-      name:"HAPPY CUSTOMERS"
+icon:<FaLeaf/>,
+      name:"Sustainability"
     },
     {
-      count:40,
-      name:"HAPPY CUSTOMERS"
+icon:<FaShieldAlt/>,
+      name:"Protection"
     },
     {
-      count:80,
-      name:"HAPPY CUSTOMERS"
+icon:<FaMicrochip/>,
+      name:"Innovation"
     },
   ]
   return (
@@ -48,35 +48,30 @@ function MissionvisionSec() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-12 col-md-6 p-5 p-md-4">
-              <div className="h-100 itemmision text-white p-4">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, cupiditate.
-<div className='text-secondary pt-2 fw-medium '> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde tenetur perferendis deserunt nulla.  </div>
-<div className='row'>
-{
-  counter.map((x,i)=>{
-    return(
-      <>
-      <div className='col-6 col-md-4 p-2' >
-<div className='px-2 h-100 text-center border p-1 border-secondary' style={{borderRadius:"0px 25px 0px 25px "}}>
-<h2 className='text-success'>
-  <CountUp
-  start={0}
-  end={x.count}
-enableScrollSpy={true}
-separator=''
-/> +
-  </h2>
-<div className=' text-uppercase'> {x.name} </div>
-</div>
-</div>
-      </>
-    )
-  })
-}
-</div>
-                <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 p-2 mt-4'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> View More</button> </div>
+            <div className="col-lg-6 col-12 col-md-6 p-5 p-md-4 ">
+  <div className="h-100 itemmision text-white p-4 d-flex flex-column justify-content-between">
+    <div>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, cupiditate.
+    </div>
+      <div className="text-secondary pt-2 fw-medium">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde tenetur perferendis deserunt nulla.
+      </div>
+
+    <div className="row g-3 pt-4">
+      {
+        counter.map((x, i) => (
+          <div key={i} className="col-6 col-md-4 d-flex icon-box">
+            <div className="px-2 text-center border border-secondary p-3 w-100 d-flex flex-column justify-content-center align-items-center" style={{ borderRadius: "0px 25px 0px 25px" }}>
+        <div  className="mission-icon" >  {x.icon}</div>
+              <div className="text-uppercase">{x.name}</div>
             </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
       </div>

@@ -1,15 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import HomePage from './Home/HomePage';
 import ProductPage from './Product/ProductPage';
 import FaqPage from './Faq/FaqPage';
+import Companyinfo from './About/Companyinfo';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomePage />} />
+          <Route path='/companyinfo' element={<Companyinfo />} />
           <Route path='/product' element={<ProductPage />} />
           <Route path='/faq' element={<FaqPage />} />
         </Routes>
