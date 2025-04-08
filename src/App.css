@@ -11,7 +11,6 @@
 /* body start */
 body {
   width: 100%;
-  /* height: auto; */
   margin: 0;
   background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdyZXklMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww");
   background-repeat: no-repeat;
@@ -25,12 +24,10 @@ body {
     background-size: cover !important;
   }
 }
-
 /* body end */
 
 /* landing page start */
 .landing_color {
-
   background-image: url("https://img.freepik.com/free-vector/realistic-white-golden-geometric-background_79603-2032.jpg?t=st=1744103633~exp=1744107233~hmac=9fb65d27892793345f88e2d19e044b7d91933acce046bf1785a797a7ba8368c3&w=996");
   height: 400px;
   background-repeat: no-repeat;
@@ -38,16 +35,10 @@ body {
   background-position: center;
   box-shadow: inset 0px 0px 1500px rgb(0, 66, 0);
 }
-
 /* landing page end */
-
-
-
 
 /* footer start */
 .footer_bg {
-  /* background:repeating-linear-gradient(90deg, transparent, #BF3200) 0% 0% / 3em 3em #000000; */
-
   background: repeating-linear-gradient(90deg, transparent, #00701d) 0% 0% / 3em 3em #000000;
   background-size: 100px 100px;
   box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.5);

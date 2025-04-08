@@ -1,3 +1,33 @@
 /* FaqPage start */
+.landing_color .container {
+  z-index: 2;
+}
 
+.accordion-button {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #004400;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #a3e6b2;
+  color: #155724;
+}
+
+.accordion-body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.accordion-item {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 4px 8px rgba(202, 9, 9, 0.05);
+}
+
+.accordion-button:focus {
+    box-shadow:inset 0px 0px 1500px  #00440021 !important;
+}
 /* FaqPage end */

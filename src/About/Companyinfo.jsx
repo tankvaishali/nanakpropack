@@ -10,7 +10,7 @@ function Companyinfo() {
   return (
 <>
 <div className='landing_color  d-flex justify-content-center align-items-center text-dark'>
-<div className='fw-bold fs-5'><Link to={"/"} className='text-decoration-none  text-success'>Home</Link> / Company Info</div>
+<div className='fw-bold fs-5  container text-center'><Link to={"/"} className='text-decoration-none  text-success'>Home</Link> / Company Info</div>
 </div>
 <AboutSec/>
 <MissionvisionSec/>
