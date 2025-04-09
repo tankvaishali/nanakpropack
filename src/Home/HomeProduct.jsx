@@ -1,43 +1,91 @@
 import React from 'react'
+import { TiArrowRight } from 'react-icons/ti'
+import Slider from 'react-slick';
 
 function HomeProduct() {
+
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    };
+
+    const products = [
+        {
+            name: 'Packaging',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
+        },
+        {
+            name: 'Packaging',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
+        },
+        {
+            name: 'Packaging',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
+        },
+        {
+            name: 'Packaging',
+            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
+        },
+    ]
+
     return (
         <>
             <div className='container mb-5'>
-                <div className='row g-2'>
-                    <div className='col-12 col-lg-3'>
-                        <div className='product_box h-100 rounded bg-white shadow p-3'>
-                            <div className='mx-auto product_img' style={{width:"120px",height:"120px"}}>
-                                <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s"} className='img-fluid rounded-circle shadow border border-success border-4' alt="" />
+                <h1 className='fw-bold text-center mb-3'>Our Featured Products</h1>
+                <Slider {...settings}>
+                    {products.map((product, index) => (
+                        <div key={index} className='p-2'>
+                            <div className='bg-white'>
+                                <div className='product_box h-100 p-4 position-relative overflow-hidden'>
+                                    <div className='product_img_wrapper d-flex flex-column justify-content-center align-items-center text-center'>
+                                        <div className='product_img' style={{ width: '120px', height: '120px' }}>
+                                            <img
+                                                src={product.img}
+                                                className='img-fluid rounded-circle shadow'
+                                                alt={product.name}
+                                            />
+                                        </div>
+                                        <h5 className='fw-semibold mt-3 text-center'>{product.name}</h5>
+                                    </div>
+                                    <div className='product_content text-center mt-2'>
+                                        <button
+                                            type='button'
+                                            className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'
+                                        >
+                                            <TiArrowRight
+                                                className='bg-white rounded-5 fs-6'
+                                                style={{ color: 'rgb(17, 107, 107)' }}
+                                            />{' '}
+                                            View More
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 className='fw-bold text-center mt-2'>name</h3>
                         </div>
-                    </div>
-                    <div className='col-12 col-lg-3'>
-                        <div className='product_box h-100 rounded bg-white shadow p-3'>
-                            <div className='mx-auto product_img' style={{width:"120px",height:"120px"}}>
-                                <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s"} className='img-fluid rounded-circle shadow border border-success border-4' alt="" />
-                            </div>
-                            <h3 className='fw-bold text-center mt-2'>name</h3>
-                        </div>
-                    </div>
-                    <div className='col-12 col-lg-3'>
-                        <div className='product_box h-100 rounded bg-white shadow p-3'>
-                            <div className='mx-auto product_img' style={{width:"120px",height:"120px"}}>
-                                <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s"} className='img-fluid rounded-circle shadow border border-success border-4' alt="" />
-                            </div>
-                            <h3 className='fw-bold text-center mt-2'>name</h3>
-                        </div>
-                    </div>
-                    <div className='col-12 col-lg-3'>
-                        <div className='product_box h-100 rounded bg-white shadow p-3'>
-                            <div className='mx-auto product_img' style={{width:"120px",height:"120px"}}>
-                                <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s"} className='img-fluid rounded-circle shadow border border-success border-4' alt="" />
-                            </div>
-                            <h3 className='fw-bold text-center mt-2'>name</h3>
-                        </div>
-                    </div>
-                </div>
+                    ))}
+                </Slider>
             </div>
         </>
     )
