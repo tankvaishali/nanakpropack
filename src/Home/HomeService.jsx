@@ -69,7 +69,7 @@ function HomeService() {
     return (
         <>
             <div className='container'>
-                <div className='row mb-5 p-2 p-lg-0'>
+                <div className='row my-5 p-2 p-lg-0'>
                 <h1 className='fw-bold text-center mb-4'>Customized Packaging Services</h1>
                     {services.map((service) => (
                         <div key={service.id} className='col-12 col-md-6 col-lg-4 bg-white pt-3 pb-2 px-4 service-box'>

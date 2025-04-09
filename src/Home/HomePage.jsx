@@ -12,8 +12,8 @@ function HomePage() {
     return (
         <>
             <HomeAboutSec />
-            <Whychooseus/>
             <HomeProduct/>
+            <Whychooseus/>
             <HomeService />
             <Testimonial/>
             <IndustrySection />

@@ -2,6 +2,7 @@ import React from 'react'
 import { IndustryData } from './IndustryData'
 import { useNavigate, useParams } from 'react-router-dom'
 import { TiArrowLeft } from 'react-icons/ti';
+import HOC from '../HOC';
 
 function IndustryInner() {
 
@@ -48,4 +49,4 @@ function IndustryInner() {
     )
 }
 
-export default IndustryInner
+export default HOC(IndustryInner)
