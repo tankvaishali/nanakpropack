@@ -244,3 +244,14 @@
 transform: translateY(-8px);
 }
 /* HomeProduct end */
+/* testimonial start */
+.bg_testimonial{
+  background-image: url("https://img.freepik.com/free-photo/close-up-mystery-box_23-2149631467.jpg?semt=ais_hybrid&w=740");
+  background-image: url("https://img.freepik.com/free-photo/close-up-mystery-box_23-2149631477.jpg?semt=ais_hybrid&w=740");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.829);
+  background-attachment: fixed;
+}
+/* testimonial end */
