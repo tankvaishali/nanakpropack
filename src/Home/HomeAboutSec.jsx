@@ -5,7 +5,7 @@ function HomeAboutSec() {
     return (
         <>
             <div className='container'>
-                <div className='row py-5 align-items-center'>
+                <div className='row py-4 align-items-center'>
                     <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center'>
                         <div className='h-100'>
                             <div class="gallery">

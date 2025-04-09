@@ -52,7 +52,7 @@ function HomeProduct() {
 
     return (
         <>
-            <div className='container mb-5'>
+            <div className='container my-5'>
                 <h1 className='fw-bold text-center mb-3'>Our Featured Products</h1>
                 <Slider {...settings}>
                     {products.map((product, index) => (

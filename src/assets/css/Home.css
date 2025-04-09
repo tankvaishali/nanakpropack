@@ -62,7 +62,7 @@
 }
 /* HomeAboutSec end */
 /* Whychooseus start */
-.bg_chooseus{
+.bg_chooseus {
   /* background-image: url("https://plus.unsplash.com/premium_photo-1732212205909-b445f958d89f?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
   background-image: url("https://images.unsplash.com/photo-1449049607083-e29383d58423?q=80&w=1500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   /* background-image: url("https://img.freepik.com/free-photo/cardboard-boxes-isolated-white-background_93675-131183.jpg?t=st=1744174608~exp=1744178208~hmac=ca878fbe6a771b2b289a2eaa05b73d41ffa62006210b0ca5acc6e0d9fd906a5d&w=996"); */
@@ -74,43 +74,47 @@
   background-attachment: fixed;
 }
 
-  .single-service-box {
-    border: 1px solid gray;
-    padding: 10px 30px 0px;
-    border-bottom-right-radius: 50px;
-    position: relative;
-    height: 230px;
-    transition: all 0.5s linear !important;
-  }
-  @media screen and (max-width:561px) {
-.bg_chooseus{
-  background-size: cover;
+.single-service-box {
+  border: 1px solid gray;
+  padding: 10px 30px 0px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  height: 230px;
+  transition: all 0.5s linear !important;
 }
+@media screen and (max-width: 561px) {
+  .bg_chooseus {
+    background-size: cover;
   }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .single-service-box{
-      height: 280px !important;
-    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-service-box {
+    height: 280px !important;
   }
-  .service-title, .service-icon-thumb, .service-button, .single-service-box {
-    transition: transform .5s linear, opacity .5s linear;
-  }
-  .service-button {
-    font-family: var(--fontstyle--);
-    position: absolute;
-    opacity: 0;
-  }
-  .single-service-box:hover {
-    border-bottom-right-radius: 0px;
-  }
-  .single-service-box:hover .service-icon-thumb {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
-   .single-service-box:hover .service-button ,.single-service-box:hover .service-title{
-    transform: translateY(-50px);
-    opacity: 1;
-  }
+}
+.service-title,
+.service-icon-thumb,
+.service-button,
+.single-service-box {
+  transition: transform 0.5s linear, opacity 0.5s linear;
+}
+.service-button {
+  font-family: var(--fontstyle--);
+  position: absolute;
+  opacity: 0;
+}
+.single-service-box:hover {
+  border-bottom-right-radius: 0px;
+}
+.single-service-box:hover .service-icon-thumb {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.single-service-box:hover .service-button,
+.single-service-box:hover .service-title {
+  transform: translateY(-50px);
+  opacity: 1;
+}
 /* Whychooseus end */
 /* IndustryInner start */
 .industry-box {
@@ -265,8 +269,9 @@
   transform: translateY(5px);
 }
 /* HomeProduct end */
+
 /* testimonial start */
-.bg_testimonial{
+.bg_testimonial {
   background-image: url("https://img.freepik.com/free-photo/close-up-mystery-box_23-2149631467.jpg?semt=ais_hybrid&w=740");
   background-image: url("https://img.freepik.com/free-photo/close-up-mystery-box_23-2149631477.jpg?semt=ais_hybrid&w=740");
   background-position: center;
