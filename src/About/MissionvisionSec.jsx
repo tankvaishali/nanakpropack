@@ -49,7 +49,7 @@ icon:<FaMicrochip/>,
               </div>
             </div>
             <div className="col-lg-6 col-12 col-md-6 p-5 p-md-4 ">
-  <div className="h-100 itemmision text-white p-4 d-flex flex-column justify-content-between">
+  <div className="h-100  text-white p-4 d-flex flex-column justify-content-between">
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, cupiditate.
     </div>
@@ -61,7 +61,7 @@ icon:<FaMicrochip/>,
       {
         counter.map((x, i) => (
           <div key={i} className="col-6 col-md-4 d-flex icon-box">
-            <div className=" text-center border border-secondary  w-100 d-flex flex-column justify-content-center p-2 align-items-center" style={{ borderRadius: "0px 25px 0px 25px" }}>
+            <div className=" text-center  w-100 d-flex flex-column justify-content-center p-2 align-items-center" style={{ borderRadius: "0px 25px 0px 25px" }}>
         <div  className="mission-icon" >  {x.icon}</div>
               <div className="text-uppercase">{x.name}</div>
             </div>
