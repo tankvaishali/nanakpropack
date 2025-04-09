@@ -13,7 +13,7 @@ function IndustrySection() {
 
     return (
         <>
-            <div className="">
+            <div className="pt-3">
                 <Container className="industries-section text-center">
                     <h1 className="fw-bold mb-3">Industries We Serve</h1>
                     <Row className="justify-content-center mb-4">

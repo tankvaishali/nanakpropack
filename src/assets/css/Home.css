@@ -159,3 +159,38 @@
   line-height: 1.5;
 }
 /* IndustryInner end */
+
+/* HomeService start */
+.service-box {
+  border: 5px solid var(--green);
+  border-radius: 20px;
+  transition: border 0.3s ease;
+}
+.service-box:hover {
+  border: 5px solid orange;
+  box-shadow: 0 4px 12px grey;
+}
+.service_icon {
+  border: 5px solid var(--green);
+  transition: border 0.3s ease;
+}
+.service-box:hover .service_icon {
+  color: var(--green) !important;
+  border: 5px solid orange;
+}
+.service_tittle {
+  transition: all 0.3s ease-in-out;
+}
+.service-box:hover .service_tittle {
+  color: var(--green) !important;
+}
+/* HomeService end */
+
+/* HomeProduct start */
+.product_img{
+  transition: transform 0.5s ease-in-out;
+}
+.product_box:hover .product_img{
+transform: translateY(-8px);
+}
+/* HomeProduct end */
