@@ -1,4 +1,5 @@
 import React from 'react'
+import HOC from '../HOC';
 import "../assets/css/Home.css";
 import HomeAboutSec from './HomeAboutSec';
 import IndustrySection from './IndustrySection';
@@ -14,4 +15,4 @@ function HomePage() {
     )
 }
 
-export default HomePage
+export default HOC(HomePage)
