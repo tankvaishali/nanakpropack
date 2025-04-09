@@ -1,7 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Montserrat;
 }
 
 :root {
@@ -39,7 +42,8 @@ body {
 
 /* footer start */
 .footer_bg {
-  background: repeating-linear-gradient(90deg, transparent, #00701d) 0% 0% / 3em 3em #000000;
+  background: repeating-linear-gradient(90deg, transparent, #00701d) 0% 0% / 3em
+    3em #000000;
   background-size: 100px 100px;
   box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.5);
 }
@@ -68,12 +72,14 @@ body {
 }
 
 .instaicon {
-  background-image: linear-gradient(180deg,
-      #833ab4,
-      #c13584,
-      #e1306c,
-      #f77737,
-      #ffdc80);
+  background-image: linear-gradient(
+    180deg,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #f77737,
+    #ffdc80
+  );
 }
 
 .instaicon:hover {

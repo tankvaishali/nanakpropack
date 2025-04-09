@@ -1,7 +1,5 @@
 import React from 'react';
-import { FaBoxOpen } from 'react-icons/fa';
 import { RiBox3Fill } from 'react-icons/ri';
-
 
 const PackagingSection = () => {
   return (
@@ -16,7 +14,6 @@ const PackagingSection = () => {
   <div className="col-12 col-lg-6 packaginsec">
     <div className="h-100 p-3">
     <h1 className='fw-bold'>Innovative Packaging Solutions</h1>
-   
         <p className="text-secondary fw-medium pera">
           We offer creative packaging designs for all industries, tailored to enhance your product's value and safety. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam debitis laboriosam reiciendis voluptas maiores excepturi enim perferendis non doloribus optio!
         </p>

@@ -61,7 +61,58 @@
   }
 }
 /* HomeAboutSec end */
+/* Whychooseus start */
+.bg_chooseus {
+   background-image: url(https://nextluxury.com/wp-content/uploads/120-Funny-Family-Quotes-Everyone-Can-Relate-To.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.822);
+  background-attachment: fixed; 
+}
 
+.single-service-box {
+  border: 1px solid gray;
+  padding: 10px 30px 0px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  height: 230px;
+  transition: all 0.5s linear !important;
+}
+@media screen and (max-width: 561px) {
+  .bg_chooseus {
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .single-service-box {
+    height: 280px !important;
+  }
+}
+.service-title,
+.service-icon-thumb,
+.service-button,
+.single-service-box {
+  transition: transform 0.5s linear, opacity 0.5s linear;
+}
+.service-button {
+  font-family: var(--fontstyle--);
+  position: absolute;
+  opacity: 0;
+}
+.single-service-box:hover {
+  border-bottom-right-radius: 0px;
+}
+.single-service-box:hover .service-icon-thumb {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.single-service-box:hover .service-button,
+.single-service-box:hover .service-title {
+  transform: translateY(-50px);
+  opacity: 1;
+}
+/* Whychooseus end */
 /* IndustryInner start */
 .industry-box {
   background-color: white;
@@ -159,3 +210,71 @@
   line-height: 1.5;
 }
 /* IndustryInner end */
+
+/* HomeService start */
+.service-box {
+  border: 5px solid var(--green);
+  border-radius: 20px;
+  transition: border 0.3s ease;
+}
+.service-box:hover {
+  border: 5px solid orange;
+  box-shadow: 0 4px 12px grey;
+}
+.service_icon {
+  border: 5px solid var(--green);
+  transition: border 0.3s ease;
+}
+.service-box:hover .service_icon {
+  color: var(--green) !important;
+  border: 5px solid orange;
+}
+.service_tittle {
+  transition: all 0.3s ease-in-out;
+}
+.service-box:hover .service_tittle {
+  color: var(--green) !important;
+}
+/* HomeService end */
+
+/* HomeProduct start */
+.product_box {
+  transition: all 0.5s ease;
+}
+.product_img_wrapper {
+  transform: translate(0px, 25px);
+  transition: all 0.5s ease;
+}
+.product_box:hover .product_img_wrapper {
+  transform: translateY(-3px);
+}
+.product_img img {
+  border: 4px solid orange;
+  transition: all 0.4s ease-in-out;
+}
+.product_box:hover .product_img img {
+  border: 4px solid var(--green) !important;
+  box-shadow: 0 2px 8px rgb(0, 77, 33) !important;
+}
+.product_content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+.product_box:hover .product_content {
+  opacity: 1;
+  transform: translateY(5px);
+}
+/* HomeProduct end */
+
+/* testimonial start */
+.bg_testimonial {
+  background-image: url("https://img.freepik.com/free-photo/close-up-mystery-box_23-2149631467.jpg?semt=ais_hybrid&w=740");
+  background-image: url("https://img.freepik.com/free-photo/close-up-mystery-box_23-2149631477.jpg?semt=ais_hybrid&w=740");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.829);
+  background-attachment: fixed;
+}
+/* testimonial end */
