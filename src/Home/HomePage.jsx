@@ -5,13 +5,17 @@ import HomeAboutSec from './HomeAboutSec';
 import IndustrySection from './IndustrySection';
 import HomeService from './HomeService';
 import HomeProduct from './HomeProduct';
+import Whychooseus from './Whychooseus';
+import Testimonial from './Testimonial';
 
 function HomePage() {
     return (
         <>
             <HomeAboutSec />
+            <Whychooseus/>
             <HomeProduct/>
             <HomeService />
+            <Testimonial/>
             <IndustrySection />
         </>
     )
