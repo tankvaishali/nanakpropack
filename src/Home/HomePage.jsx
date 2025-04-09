@@ -7,15 +7,17 @@ import HomeService from './HomeService';
 import HomeProduct from './HomeProduct';
 import Whychooseus from './Whychooseus';
 import Testimonial from './Testimonial';
+import HomeCarousel from '../HomeCarousel';
 
 function HomePage() {
     return (
         <>
+            <HomeCarousel />
             <HomeAboutSec />
-            <HomeProduct/>
-            <Whychooseus/>
+            <HomeProduct />
+            <Whychooseus />
             <HomeService />
-            <Testimonial/>
+            <Testimonial />
             <IndustrySection />
         </>
     )
