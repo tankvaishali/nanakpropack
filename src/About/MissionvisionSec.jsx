@@ -25,7 +25,7 @@ icon:<FaMicrochip/>,
         <div className="container py-5">
           <div className="row py-3">
             <div className="col-lg-3 col-12 col-md-6 p-5 p-md-4">
-              <div className="h-100 d-flex flex-column text-center">
+              <div className="h-100 d-flex flex-column text-center"  data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
                 <div className="cardcss p-2 flex-grow-1 text-white">
                   <div class="serviceicon">
                     <img src={""} alt="" className="img-fluid" />
@@ -37,7 +37,7 @@ icon:<FaMicrochip/>,
               </div>
             </div>
             <div className="col-lg-3 col-12 col-md-6 p-5 p-md-4">
-              <div className="h-100 d-flex flex-column text-center">
+              <div className="h-100 d-flex flex-column text-center"  data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
                 <div className="cardcss p-2 flex-grow-1 text-white">
                   <div class="serviceicon">
                     <img src={""} alt="" className="img-fluid" />
@@ -49,11 +49,11 @@ icon:<FaMicrochip/>,
               </div>
             </div>
             <div className="col-lg-6 col-12 col-md-6 p-5 p-md-4 ">
-  <div className="h-100  text-white p-4 d-flex flex-column justify-content-between">
+  <div className="h-100  text-white p-4 d-flex flex-column justify-content-between pera"  data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, cupiditate.
     </div>
-      <div className="text-secondary pt-2 fw-medium">
+      <div className="text-secondary pt-2 fw-medium pera">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde tenetur perferendis deserunt nulla.
       </div>
 

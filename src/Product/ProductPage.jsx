@@ -8,7 +8,7 @@ function ProductPage() {
     return (
         <>
             <div className='landing_color  d-flex justify-content-center align-items-center text-dark'>
-                <div className='fw-bold fs-5  container text-center'><Link to={"/"} className='text-decoration-none  text-success'>Home</Link> / Product</div>
+                <div className='fw-bold fs-5  container text-center' data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true"><Link to={"/"} className='text-decoration-none  text-success'>Home</Link> / Product</div>
             </div>
             <ProductData />
         </>

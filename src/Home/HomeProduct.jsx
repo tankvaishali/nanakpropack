@@ -31,7 +31,6 @@ function HomeProduct() {
             }
         ]
     };
-
     const products = [
         {
             name: 'Packaging',
@@ -50,7 +49,6 @@ function HomeProduct() {
             img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
         },
     ]
-
     return (
         <>
             <div className='container my-5 pb-5'>
@@ -58,8 +56,6 @@ function HomeProduct() {
             <TitleHead ftitle={"Our Featured"} stitle={"Products"}/>
             <p className='pera' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus doloribus odio corporis voluptas. Odit voluptates dignissimos obcaecati laboriosam voluptatibus.</p>
             </div>
-
-
                 <Slider {...settings}>
                     {products.map((product, index) => (
                         <div key={index} className='p-2'>
@@ -95,6 +91,5 @@ function HomeProduct() {
             </div>
         </>
     )
-}
-
+}                     
 export default HomeProduct
