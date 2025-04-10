@@ -1,6 +1,7 @@
 import React from 'react'
 import { TiArrowRight } from 'react-icons/ti'
 import Slider from 'react-slick';
+import TitleHead from '../TitleHead';
 
 function HomeProduct() {
 
@@ -52,8 +53,13 @@ function HomeProduct() {
 
     return (
         <>
-            <div className='container mb-5'>
-                <h1 className='fw-bold text-center mb-3'>Our Featured Products</h1>
+            <div className='container my-5 pb-5'>
+            <div className='text-center'>
+            <TitleHead ftitle={"Our Featured"} stitle={"Products"}/>
+            <p className='pera' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus doloribus odio corporis voluptas. Odit voluptates dignissimos obcaecati laboriosam voluptatibus.</p>
+            </div>
+
+
                 <Slider {...settings}>
                     {products.map((product, index) => (
                         <div key={index} className='p-2'>
