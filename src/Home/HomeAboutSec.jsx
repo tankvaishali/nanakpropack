@@ -5,9 +5,9 @@ import TitleHead from '../TitleHead'
 function HomeAboutSec() {
     return (
         <>
-            <div className='container overflow-hidden'>
+            <div className='container'>
                 <div className='row py-4 align-items-center'>
-                    <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center' data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
+                    <div className='col-12 col-lg-6 d-flex justify-content-center align-items-center'>
                         <div className='h-100'>
                             <div class="gallery">
                                 <img src="https://picsum.photos/id/1040/200/200" alt="a house on a mountain" />
