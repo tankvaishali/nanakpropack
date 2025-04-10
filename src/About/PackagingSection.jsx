@@ -1,19 +1,21 @@
 import React from 'react';
 import { RiBox3Fill } from 'react-icons/ri';
+import TitleHead from '../TitleHead';
 
 const PackagingSection = () => {
   return (
-<div className="packaginsec py-5">
+<div className="packaginsec py-5 overflow-hidden">
 <div className="container py-5">
 <div className="row ">
-  <div className="col-12 col-lg-6">
+  <div className="col-12 col-lg-6"  data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
     <div className="h-100">
 <img src="https://plus.unsplash.com/premium_photo-1676057875345-e49ca1c10dee?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJveHxlbnwwfHwwfHx8MA%3D%3D" alt="" className='img-fluid object-fit-cover w-100 h-100'/>
     </div>
   </div>
-  <div className="col-12 col-lg-6 packaginsec">
+  <div className="col-12 col-lg-6 packaginsec"  data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
     <div className="h-100 p-3">
-    <h1 className='fw-bold'>Innovative Packaging Solutions</h1>
+    <TitleHead ftitle={"Innovative"} stitle={"Packaging Solutions"}/>
+    
         <p className="text-secondary fw-medium pera">
           We offer creative packaging designs for all industries, tailored to enhance your product's value and safety. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam debitis laboriosam reiciendis voluptas maiores excepturi enim perferendis non doloribus optio!
         </p>

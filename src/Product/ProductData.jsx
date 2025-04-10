@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Departments } from './ProductDepartment';
 import emailjs from '@emailjs/browser';
+import TitleHead from '../TitleHead';
 
 function ProductData() {
     const [showModal, setShowModal] = useState(false);
@@ -72,7 +73,7 @@ function ProductData() {
 
     return (
         <>
-            <div>
+            <div className='overflow-hidden'>
                 <div className='container py-5'>
 
                     {/* Tabs */}
@@ -91,7 +92,7 @@ function ProductData() {
                     {/* Product Data */}
                     {activeTab.subimage.map((item, index) => (
                         <div className='row mb-5' key={index}>
-                            <div className='col-12 col-lg-6 p-3'>
+                            <div className='col-12 col-lg-6 p-3' data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                                 <div className='h-100 p-3'>
                                     <div className='text-center' style={{ maxWidth: "100%", width: "100%", maxHeight: "350px", height: "auto" }}>
                                         <img
@@ -125,11 +126,11 @@ function ProductData() {
                             </div>
 
                             {/* Right side content */}
-                            <div className='col-12 col-lg-6 p-3'>
+                            <div className='col-12 col-lg-6 p-3' data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                                 <div className='h-100 p-4 p-lg-5 rounded shadow-lg text-light bg-secondary'>
                                     <h2 className='fw-bold'>{item.MainName}</h2>
                                     <div className='py-2'>
-                                        <p className='text-light'>{item.ProductDetails}</p>
+                                        <p className='text-light pera'>{item.ProductDetails}</p>
                                     </div>
                                     <div>
                                         <button type='button' onClick={() => setShowModal(true)} className='Productbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'>Get Quote</button>
@@ -175,7 +176,8 @@ function ProductData() {
                             onClick={() => setShowModal(false)}
                         ></button>
 
-                        <h3 className="fw-bold mt-3">Design Your Own Box</h3>
+                        
+                        <TitleHead ftitle={"Design"} stitle={"Your Own Box"}/>
                         <p className='text-muted'>Customize your box and get a quote instantly!</p>
                         <form onSubmit={handleSubmit} className="text-start">
                             <div className="row">
