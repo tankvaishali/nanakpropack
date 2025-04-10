@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaQuoteRight } from 'react-icons/fa';
 import Slider from "react-slick";
+import TitleHead from '../TitleHead';
 
 function Testimonial() {
   const settings = {
@@ -41,12 +42,15 @@ function Testimonial() {
   ];
 
   return (
-    <div className='bg_testimonial'>
+    <div className='bg_testimonial overflow-hidden'>
       <div className="container py-5">
         <div className="row">
-        <div className="col-12 col-lg-6 d-flex ">
+        <div className="col-12 col-lg-6 d-flex " data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
 <div className="h-100 text-white text-center flex-column justify-content-center align-content-center ">
-<h1 className='fw-bold'>Testimonial</h1>
+<TitleHead ftitle={"What"} stitle={"Client Says"}/>
+
+              
+
 <div className="pera text-secondary">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, cum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem error aperiam culpa officiis harum sequi sapiente voluptates expedita debitis aliquid.
 </div>
@@ -55,7 +59,7 @@ function Testimonial() {
 </div>
 </div>
           </div>
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
 <div className="h-100  p-3">
 <Slider {...settings}>
                   {ProductItemlist.map((x, i) => {
@@ -64,7 +68,7 @@ function Testimonial() {
                       <div className="pt-3 fs-1 text-success">
                           <FaQuoteRight />
                         </div>
-                        <div className="py-3 text-white">{x.description}</div>
+                        <div className="py-3 text-white pera">{x.description}</div>
                         <div
                           className="rounded-circle mx-auto mt-4"
                           style={{ width: "80px", height: "80px" }}
