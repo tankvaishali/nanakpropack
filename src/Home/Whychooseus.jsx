@@ -106,7 +106,7 @@ function Whychooseus() {
                                     {services.map((service) => (
                                         <div className="col-lg-4 col-md-6 col-sm-12" data-aos={service.animation} data-aos-duration="1500" data-aos-delay={service.delay} data-aos-once="true">
                                             <div className="single-service-box mb-4 overflow-hidden">
-                                                <div className="service-icon-thumb text-white fs-1 py-2">
+                                                <div className="service-icon-thumb text-warning fs-1 py-2">
                                                     {service.icon}
                                                 </div>
                                                 <div className="service-title">

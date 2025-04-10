@@ -7,7 +7,7 @@ function Footer() {
     <div className='footer_bg'>
  <div className="container ">
     <div className="row border-bottom border-secondary ">
-        <div className="col-12 col-lg-4  border-end my-4 border-0 border-md-2" >
+        <div className="col-12 col-lg-4  border-end my-4 border-2" >
 <div className="h-100 text-center p-1" >
     <div className='w-50 mx-auto'>
         <img src={require("./assets/images/ImportedPhoto_1744001267180.jpg")} alt="" className='img-fluid  w-100 h-100' />
