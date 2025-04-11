@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { TiArrowRight } from 'react-icons/ti'
 import emailjs from '@emailjs/browser';
+import TitleHead from '../TitleHead';
 
 function HomeContact() {
 
@@ -33,8 +34,10 @@ function HomeContact() {
             <div className='Home_contact_bg py-5'>
                 <div className='container'>
                     <div className='row justify-content-center'>
-                        <h1 className='fw-bold text-center text-white'>Let's Conversation With Us!</h1>
-                        <form action="" onSubmit={handleSubmit} className='d-flex justify-content-center'>
+                        <div className='text-center text-white'>
+                            <TitleHead ftitle={"Let's Conversation"} stitle={"With Us !"} />
+                        </div>
+                        <form action="" onSubmit={handleSubmit} className='d-flex justify-content-center' data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
                             <div className='col-12 col-lg-8 p-3'>
                                 <div className='w-100 d-flex justify-content-center gap-3'>
                                     <div className='w-50'>

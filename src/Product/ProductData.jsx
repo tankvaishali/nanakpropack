@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Departments } from './ProductDepartment';
 import emailjs from '@emailjs/browser';
 import TitleHead from '../TitleHead';
+import { TiArrowRight } from 'react-icons/ti';
 
 function ProductData() {
     const [showModal, setShowModal] = useState(false);
@@ -133,7 +134,7 @@ function ProductData() {
                                         <p className='text-light pera'>{item.ProductDetails}</p>
                                     </div>
                                     <div>
-                                        <button type='button' onClick={() => setShowModal(true)} className='Productbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'>Get Quote</button>
+                                        <button type='button' onClick={() => setShowModal(true)} className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Get Quote</button>
                                     </div>
                                 </div>
                             </div>
@@ -176,9 +177,9 @@ function ProductData() {
                             onClick={() => setShowModal(false)}
                         ></button>
 
-                        
-                        <TitleHead ftitle={"Design"} stitle={"Your Own Box"}/>
-                        <p className='text-muted'>Customize your box and get a quote instantly!</p>
+
+                        <TitleHead ftitle={"Design"} stitle={"Your Own Box"} />
+                        <p className='text-muted' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Customize your box and get a quote instantly!</p>
                         <form onSubmit={handleSubmit} className="text-start">
                             <div className="row">
                                 <div className="col-md-6">
@@ -314,7 +315,7 @@ function ProductData() {
                             </div>
 
                             <div className='text-center mt-4'>
-                                <button type='submit' className='Productbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'>Submit Design Request</button>
+                                <button type='submit' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Submit Design Request</button>
                             </div>
                         </form>
                     </div>

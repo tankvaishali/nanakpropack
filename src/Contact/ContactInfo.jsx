@@ -13,7 +13,7 @@ function ContactInfo() {
                     <div className="col-12 col-lg-6 p-3">
                         <div className='h-100'>
                             <TitleHead ftitle={"Contact"} stitle={"Us"} />
-                            <p className='fw-medium pera text-secondary'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sint ea illo atque eum natus omnis quis maxime alias sed.</p>
+                            <p className='fw-medium pera text-secondary' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sint ea illo atque eum natus omnis quis maxime alias sed.</p>
                             <div className='d-lg-flex d-md-flex w-100 justify-content-center mt-4'>
                                 <div className='main_contactBox d-flex w-100 w-lg-50 w-md-50'>
                                     <div className='main_contact'>
@@ -65,7 +65,7 @@ function ContactInfo() {
                         </div>
                     </div>
                     <div className="col-12 col-lg-6 p-3">
-                        <div className="Contact_cont h-100">
+                        <div className="Contact_cont h-100" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
                             <div className='p-4'>
                                 <div className='d-flex justify-content-center gap-3'>
                                     <div className='w-50'>
@@ -95,7 +95,7 @@ function ContactInfo() {
             </div>
 
             {/* map */}
-            <div className='container'>
+            <div className='container' data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
                 <div className='mb-5'>
                     <iframe title='google map' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29752.700882695055!2d72.8291723!3d21.228374199999998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fdfc718eb4b%3A0xcf5efb27dfe048c5!2sBelpatra%20Pharmachem!5e0!3m2!1sen!2sin!4v1740025356298!5m2!1sen!2sin" width="100%" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='shadow-lg'></iframe>
                 </div>

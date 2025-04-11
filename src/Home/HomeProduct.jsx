@@ -2,6 +2,7 @@ import React from 'react'
 import { TiArrowRight } from 'react-icons/ti'
 import Slider from 'react-slick';
 import TitleHead from '../TitleHead';
+import { Link } from 'react-router-dom';
 
 function HomeProduct() {
 
@@ -52,10 +53,10 @@ function HomeProduct() {
     return (
         <>
             <div className='container my-5 pb-5'>
-            <div className='text-center'>
-            <TitleHead ftitle={"Our Featured"} stitle={"Products"}/>
-            <p className='pera' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus doloribus odio corporis voluptas. Odit voluptates dignissimos obcaecati laboriosam voluptatibus.</p>
-            </div>
+                <div className='text-center'>
+                    <TitleHead ftitle={"Our Featured"} stitle={"Products"} />
+                    <p className='pera' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus doloribus odio corporis voluptas. Odit voluptates dignissimos obcaecati laboriosam voluptatibus.</p>
+                </div>
                 <Slider {...settings}>
                     {products.map((product, index) => (
                         <div key={index} className='p-2'>
@@ -72,16 +73,18 @@ function HomeProduct() {
                                         <h5 className='fw-semibold mt-3 text-center'>{product.name}</h5>
                                     </div>
                                     <div className='product_content text-center mt-2'>
-                                        <button
-                                            type='button'
-                                            className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'
-                                        >
-                                            <TiArrowRight
-                                                className='bg-white rounded-5 fs-6'
-                                                style={{ color: 'rgb(17, 107, 107)' }}
-                                            />{' '}
-                                            View More
-                                        </button>
+                                        <Link to={"/product"}>
+                                            <button
+                                                type='button'
+                                                className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'
+                                            >
+                                                <TiArrowRight
+                                                    className='bg-white rounded-5 fs-6'
+                                                    style={{ color: 'rgb(17, 107, 107)' }}
+                                                />{' '}
+                                                View More
+                                            </button>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -91,5 +94,5 @@ function HomeProduct() {
             </div>
         </>
     )
-}                     
+}
 export default HomeProduct
