@@ -18,7 +18,7 @@ function IndustrySection() {
                 <Container className="industries-section text-center">
                
                     <TitleHead ftitle={"Industries"} stitle={"We Serve"}/>
-                    <p className='pera'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique accusamus fuga quod sequi! Doloribus corporis facilis commodi voluptatem error iste?</p>
+                    <p className='pera' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique accusamus fuga quod sequi! Doloribus corporis facilis commodi voluptatem error iste?</p>
                     <Row className="justify-content-center mb-4">
                         {IndustryData.map((industry, index) => (
                             <div key={index} className='col-lg-2 col-md-3 col-sm-4 col-6 m-sm-2 mt-3 mb-4' onClick={() => handleClick(industry.Id)} style={{ cursor: 'pointer' }}>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { TiArrowRight } from 'react-icons/ti'
+import TitleHead from '../TitleHead'
 
 function HomeContact() {
     return (
@@ -7,11 +8,13 @@ function HomeContact() {
             <div className='Home_contact_bg py-5 mb-5'>
                 <div className='container'>
                     <div className='row justify-content-center'>
-                        <h1 className='fw-bold text-center text-white'>Let's Conversation With Us!</h1>
+                       
+                        <div className="text-center text-white"><TitleHead ftitle={"Let's Conversation"} stitle={"With Us !"}/></div>
+                        <p className='pera text-center text-white' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nam deleniti ipsam voluptatum dolores voluptate nisi qui ut dolor nostrum?</p>
                         <div className='col-12 col-lg-8 p-3'>
                             <div className='w-100 d-flex justify-content-center gap-3'>
                                 <div className='w-50'>
-                                    <label htmlFor="" className='d-block text-white'>Name</label>
+                                    <label htmlFor="" className='d-block text-white'>Name </label>
                                     <input type="text" name="name" id="" className='input-home w-100 mt-2 p-2 border-0' style={{ outline: "none", background: "#f5f5f594" }} />
                                 </div>
                                 <div className='w-50'>
