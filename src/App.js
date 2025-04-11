@@ -5,6 +5,7 @@ import FaqPage from './Faq/FaqPage';
 import Companyinfo from './About/Companyinfo';
 import HomePage from './Home/HomePage';
 import IndustryInner from './Home/IndustryInner';
+import ContactPage from './Contact/ContactPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path='/companyinfo' element={<Companyinfo />} />
           <Route path='/product' element={<ProductPage />} />
           <Route path='/faq' element={<FaqPage />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Routes>
       </BrowserRouter>
     </>

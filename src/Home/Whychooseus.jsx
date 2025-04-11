@@ -2,6 +2,7 @@ import React from 'react'
 import { FaKitchenSet } from 'react-icons/fa6';
 import { MdOutlineKitchen, MdOutlineSoupKitchen } from 'react-icons/md';
 import { RiHotelLine, RiRestaurantLine } from 'react-icons/ri';
+import TitleHead from '../TitleHead';
 // import TittlesAll from './TittlesAll';
 function Whychooseus() {
 
@@ -90,19 +91,22 @@ function Whychooseus() {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-lg-4 col-md-6 col-sm-12">
-                                        <h1 className='fw-bold text-white'>Why Choose Us</h1>
+                                  <div className='text-white'>
+                                  <TitleHead ftitle={"Why"} stitle={"Choose Us"}/>
+                                  </div>
+                                     
 
-                                        <p className="about-text pera text-secondary pt-1">
+                                        <p className="about-text pera text-secondary pt-1" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in molestias voluptates ipsum sint iste aliquid, possimus perspiciatis earum blanditiis.
                                         </p>
-                                        <p className="about-text pera text-secondary">
+                                        <p className="about-text pera text-secondary" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
                                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum in molestias voluptates ipsum sint iste aliquid, possimus perspiciatis earum blanditiis.
                                         </p>
                                     </div>
                                     {services.map((service) => (
                                         <div className="col-lg-4 col-md-6 col-sm-12" data-aos={service.animation} data-aos-duration="1500" data-aos-delay={service.delay} data-aos-once="true">
                                             <div className="single-service-box mb-4 overflow-hidden">
-                                                <div className="service-icon-thumb text-white fs-1 py-2">
+                                                <div className="service-icon-thumb text-warning fs-1 py-2">
                                                     {service.icon}
                                                 </div>
                                                 <div className="service-title">

@@ -1,0 +1,33 @@
+/* ContactInfo start */
+.main_contact {
+  width: 45px;
+  height: 45px;
+}
+.Contact_icon-wrapper {
+  width: 45px;
+  height: 45px;
+  border-radius: 69% 26% 49% 70% / 36% 50% 62% 61%;
+  background-color: #00701eaf;
+  position: relative;
+}
+.contact-icon {
+  position: absolute;
+  font-size: 48px;
+  bottom: -10px;
+  right: -10px;
+  transition: all 0.4s ease-in-out;
+}
+.main_contactBox:hover .contact-icon {
+  right: 0px !important;
+}
+.contactForm_cont {
+  transition: all 0.4s ease-in-out;
+}
+.main_contactBox:hover .contactForm_cont {
+  margin-left: 10px !important;
+}
+.Contact_cont {
+  background-color: var(--green);
+  box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.527);
+}
+/* ContactInfo end */

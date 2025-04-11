@@ -7,12 +7,12 @@ function Footer() {
     <div className='footer_bg'>
  <div className="container ">
     <div className="row border-bottom border-secondary ">
-        <div className="col-12 col-lg-4  border-end my-4">
-<div className="h-100 text-center p-1">
+        <div className="col-12 col-lg-4  border-end my-4 border-2" >
+<div className="h-100 text-center p-1" >
     <div className='w-50 mx-auto'>
         <img src={require("./assets/images/ImportedPhoto_1744001267180.jpg")} alt="" className='img-fluid  w-100 h-100' />
     </div>
-<div className='text-white pt-3'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo enim sed adipisci sequi quae sint dicta! Ipsum porro aut sit.</div>
+<div className='text-white pt-3 pera'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo enim sed adipisci sequi quae sint dicta! Ipsum porro aut sit.</div>
 </div>
         </div>
 
@@ -21,11 +21,11 @@ function Footer() {
     <div>
       <h2 className="border-bottom border-success mx-auto border-3 pb-2" style={{width:"fit-content"}}>Useful Links</h2>
     </div>
-    <div className='py-1'><Link to={"/"} className='text-white text-decoration-none '>Home</Link></div>
-    <div className='py-1'><Link to={"/companyinfo"} className='text-white text-decoration-none '>Company Info</Link></div>
-    <div className='py-1'><Link to={"/"} className='text-white text-decoration-none '>Products</Link></div>
-    <div className='py-1'><Link to={"/"} className='text-white text-decoration-none '>Contact Us</Link></div>
-    <div className='py-1'><Link to={"/"} className='text-white text-decoration-none '>Faq</Link></div>
+    <div className='py-1'><Link to={"/"} className='text-white text-decoration-none pera'>Home</Link></div>
+    <div className='py-1'><Link to={"/companyinfo"} className='text-white text-decoration-none pera'>Company Info</Link></div>
+    <div className='py-1'><Link to={"/product"} className='text-white text-decoration-none pera'>Products</Link></div>
+    <div className='py-1'><Link to={"/contact"} className='text-white text-decoration-none pera'>Contact Us</Link></div>
+    <div className='py-1'><Link to={"/faq"} className='text-white text-decoration-none pera'>Faq</Link></div>
   </div>
 </div>
 <div className="col-12 col-lg-4 py-4 py-lg-5">
@@ -80,7 +80,7 @@ function Footer() {
 </div>
 
     </div>
-    <div className='p-2 text-center text-white'>Copyright © 2025 💚 Boxiz, All rights Reserved.</div>
+    <div className='p-2 text-center text-white pera'>Copyright © 2025 💚 Boxiz, All rights Reserved.</div>
  </div>
     </div>
   );

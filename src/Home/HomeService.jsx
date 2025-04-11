@@ -7,6 +7,7 @@ import { LuBox } from 'react-icons/lu';
 import { MdSdStorage } from 'react-icons/md';
 import { RiPencilRuler2Line, RiRecycleFill, RiTapeFill } from 'react-icons/ri';
 import { SiSecurityscorecard } from 'react-icons/si';
+import TitleHead from '../TitleHead';
 
 const services = [
     {
@@ -64,22 +65,42 @@ const services = [
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias natus dolores optio est quos omnis, possimus voluptatem adipisci eligendi necessitatibus sint earum delectus itaque porro vel provident laborum vitae nihil?'
     }
 ];
+const animationTypes = ['fade-up', 'fade-right', 'zoom-in-up', 'flip-left', 'fade-down'];
 
 function HomeService() {
     return (
         <>
-            <div className='container'>
+            <div className='container overflow-hidden'>
                 <div className='row my-5 p-2 p-lg-0'>
-                <h1 className='fw-bold text-center mb-4'>Customized Packaging Services</h1>
-                    {services.map((service) => (
-                        <div key={service.id} className='col-12 col-md-6 col-lg-4 bg-white pt-3 pb-2 px-4 service-box'>
-                            <div className='h-100'>
-                                <div className='my-2'>{service.icon}</div>
-                                <h3 className='fw-bold service_tittle'>{service.title}</h3>
-                                <p className='fw-medium pera text-secondary'>{service.description}</p>
-                            </div>
-                        </div>
-                    ))}
+             <div className='text-center py-3'>
+             <TitleHead ftitle={"Customized"} stitle={"Packaging Services"}/>
+              <p className='pera'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, optio! Laudantium a assumenda recusandae, autem fugiat quos quasi impedit excepturi!</p>
+             </div>
+             {services.map((service, index) => {
+                const aosType = animationTypes[index % animationTypes.length];
+                const aosDelay = index * 100;
+                const aosDuration = 1000 + (index % 3) * 300;
+    
+
+    return (
+        <div
+            key={service.id}
+            className='col-12 col-md-6 col-lg-4 bg-white pt-3 pb-2 px-4 service-box'
+            data-aos={aosType}
+            data-aos-delay={aosDelay}
+            data-aos-duration={aosDuration}
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+        >
+            <div className='h-100'>
+                <div className='my-2'>{service.icon}</div>
+                <h3 className='fw-bold service_tittle'>{service.title}</h3>
+                <p className='fw-medium pera text-secondary pera'>{service.description}</p>
+            </div>
+        </div>
+    );
+})}
+
                 </div>
             </div>
         </>

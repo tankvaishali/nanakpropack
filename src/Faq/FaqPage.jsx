@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import "../assets/css/Faq.css";
 import HOC from '../HOC';
+import TitleHead from '../TitleHead';
 
 const FaqPage = () => {
 
@@ -32,15 +33,15 @@ const FaqPage = () => {
 
     return (
         <>
-            <div className='landing_color d-flex justify-content-center align-items-center text-dark'>
-                <div className='fw-bold fs-5 container text-center'>
+            <div className='landing_color d-flex justify-content-center align-items-center text-dark overflow-hidden'>
+                <div className='fw-bold fs-5 container text-center' data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
                     <Link to={"/"} className='text-decoration-none text-success'>Home</Link> / Frequently Asked Questions (FAQ)
                 </div>
             </div>
 
             <div className="container py-5">
                 <div className="row">
-                    <div className="col-12 col-lg-6">
+                    <div className="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                         <div className="h-100">
                             <img
                                 src={require("../assets/images/corrugated-boxes.jpg")}
@@ -49,9 +50,10 @@ const FaqPage = () => {
                             />
                         </div>
                     </div>
-                    <div className="col-12 col-lg-6 d-flex flex-column justify-content-between align-items-strech">
+                    <div className="col-12 col-lg-6 d-flex flex-column justify-content-between align-items-strech" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                         <div className="h-100 ">
-                            <h1 className='py-2 fw-bold'>Need-To-Know Information</h1>
+                       
+                            <TitleHead ftitle={"Need-To-Know"} stitle={"Information"}/>
                             <div className="accordion" id="accordionExample">
                                 {faqData.map((item, index) => {
                                     const headingId = `heading${index}`;
@@ -79,7 +81,7 @@ const FaqPage = () => {
                                                 data-bs-parent="#accordionExample"
                                             >
                                                 <div className="accordion-body">
-                                                    <p>{item.answer}</p>
+                                                    <p className='pera'>{item.answer}</p>
                                                     {item.path && (
                                                         <Link to={item.path} className="btn btn-success  fw-bold">
                                                             Contact Us

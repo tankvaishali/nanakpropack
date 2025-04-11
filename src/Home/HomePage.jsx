@@ -8,6 +8,7 @@ import HomeProduct from './HomeProduct';
 import Whychooseus from './Whychooseus';
 import Testimonial from './Testimonial';
 import HomeCarousel from '../HomeCarousel';
+import HomeContact from './HomeContact';
 
 function HomePage() {
     return (
@@ -19,6 +20,7 @@ function HomePage() {
             <HomeService />
             <Testimonial />
             <IndustrySection />
+            <HomeContact />
         </>
     )
 }
