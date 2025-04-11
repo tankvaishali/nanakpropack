@@ -27,6 +27,63 @@ body {
     background-size: cover !important;
   }
 }
+
+.pera {
+  font-size: 14px;
+}
+
+/* body end */
+
+/* Header start */
+.headermargin {
+  margin-bottom: -45px;
+  margin-top: -35px;
+  z-index: 10000;
+}
+
+@media screen and (max-width:992px) {
+  .headermargin {
+    margin-bottom: -80px;
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+.custom-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  outline: none !important;
+}
+
+.offcanvas {
+  background: transparent !important;
+}
+
+.offcanvas.offcanvas-start {
+  border-right: 0px !important;
+}
+
+.btn-close {
+  background-image: none !important;
+}
+
+.chevron-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chevron {
+  width: 40px;
+  height: 40px;
+  clip-path: polygon(100% 0, 50% 50%, 100% 100%, 0% 100%, 50% 50%, 0% 0%);
+}
+
+/* Header End */
+
 /* body end */
 
 /* landing page start */
@@ -38,12 +95,12 @@ body {
   background-position: center;
   box-shadow: inset 0px 0px 1500px rgb(0, 66, 0);
 }
+
 /* landing page end */
 
 /* footer start */
 .footer_bg {
-  background: repeating-linear-gradient(90deg, transparent, #00701d) 0% 0% / 3em
-    3em #000000;
+  background: repeating-linear-gradient(90deg, transparent, #00701d) 0% 0% / 3em 3em #000000;
   background-size: 100px 100px;
   box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.5);
 }
@@ -72,14 +129,12 @@ body {
 }
 
 .instaicon {
-  background-image: linear-gradient(
-    180deg,
-    #833ab4,
-    #c13584,
-    #e1306c,
-    #f77737,
-    #ffdc80
-  );
+  background-image: linear-gradient(180deg,
+      #833ab4,
+      #c13584,
+      #e1306c,
+      #f77737,
+      #ffdc80);
 }
 
 .instaicon:hover {
