@@ -18,10 +18,10 @@ function IndustryInner() {
     return (
         <>
             <div className="container-lg py-5 overflow-hidden">
-                <div className='industry-section'>
+                <div className='industry-section' style={{ marginTop: "60px" }}>
                     <div className='p-3 p-lg-5 p-md-5'>
                         <div className='row justify-content-center align-items-center align-content-center'>
-                            <div className='col-lg-7 col-md-6 col-12'  data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+                            <div className='col-lg-7 col-md-6 col-12' data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                                 <div className='h-100 px-1 px-lg-5 px-md-5'>
                                     <div className="d-inline">
                                         <img src={industry.img} alt="not found" className='float-end industry-image' style={{ maxWidth: "90%" }} />
@@ -30,8 +30,8 @@ function IndustryInner() {
                                 </div>
                             </div>
                             <div className='col-lg-5 col-md-6 col-12'>
-                                <div className='h-100'  data-aos="fade-left" data-aos-duration="1500" data-aos-once="true"
-                           >
+                                <div className='h-100' data-aos="fade-left" data-aos-duration="1500" data-aos-once="true"
+                                >
                                     <div className='text-success'>{industry.icon}</div>
                                     <h2 className='fw-bold my-3 text-capitalize'>{industry.title}</h2>
                                     <h4 className='fw-bold text-capitalize'>{industry.subtitle}</h4>
