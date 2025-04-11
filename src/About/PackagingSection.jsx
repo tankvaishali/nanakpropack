@@ -20,9 +20,9 @@ const PackagingSection = () => {
           We offer creative packaging designs for all industries, tailored to enhance your product's value and safety. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam debitis laboriosam reiciendis voluptas maiores excepturi enim perferendis non doloribus optio!
         </p>
         <ul className="features-list">
-          <div className='d-flex py-1 align-items-center'><div className='fs-5 fw-bold text-success pe-2'><RiBox3Fill/></div>Eco-friendly and sustainable materials</div>
-          <div className='d-flex py-1 align-items-center'><div className='fs-5 fw-bold text-success pe-2'><RiBox3Fill/></div>Custom designs for various industries</div>
-          <div className='d-flex py-1 align-items-center'><div className='fs-5 fw-bold text-success pe-2'><RiBox3Fill/></div>Durable and cost-effective solutions</div>
+          <div className='d-flex py-1 align-items-center pera'><div className='fs-5 fw-bold text-success pe-2'><RiBox3Fill/></div>Eco-friendly and sustainable materials</div>
+          <div className='d-flex py-1 align-items-center pera'><div className='fs-5 fw-bold text-success pe-2'><RiBox3Fill/></div>Custom designs for various industries</div>
+          <div className='d-flex py-1 align-items-center pera'><div className='fs-5 fw-bold text-success pe-2'><RiBox3Fill/></div>Durable and cost-effective solutions</div>
         </ul>
     </div>
   </div>

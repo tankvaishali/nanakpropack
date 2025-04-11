@@ -39,9 +39,9 @@ const FaqPage = () => {
                 </div>
             </div>
 
-            <div className="container py-5">
+            <div className="container py-5 overflow-hidden">
                 <div className="row">
-                    <div className="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+                    <div className="col-12 col-lg-6 " data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                         <div className="h-100">
                             <img
                                 src={require("../assets/images/corrugated-boxes.jpg")}
@@ -50,10 +50,11 @@ const FaqPage = () => {
                             />
                         </div>
                     </div>
-                    <div className="col-12 col-lg-6 d-flex flex-column justify-content-between align-items-strech" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+                    <div className="col-12 col-lg-6 d-flex flex-column justify-content-between align-items-strech pt-3 pt-lg-0" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                         <div className="h-100 ">
-                       
-                            <TitleHead ftitle={"Need-To-Know"} stitle={"Information"}/>
+
+                            <TitleHead ftitle={"Need-To-Know"} stitle={"Information"} />
+                            <p className='pera'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, consequatur eveniet. Odio cumque, repudiandae accusamus assumenda itaque cupiditate perferendis amet!</p>
                             <div className="accordion" id="accordionExample">
                                 {faqData.map((item, index) => {
                                     const headingId = `heading${index}`;

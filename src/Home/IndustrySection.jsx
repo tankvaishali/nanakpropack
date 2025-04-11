@@ -7,7 +7,6 @@ import TitleHead from '../TitleHead';
 function IndustrySection() {
 
     const navigate = useNavigate();
-
     const handleClick = (Id) => {
         navigate(`/industry/${Id}`)
     }
@@ -22,7 +21,7 @@ function IndustrySection() {
                     <Row className="justify-content-center mb-4">
                         {IndustryData.map((industry, index) => (
                             <div key={index} className='col-lg-2 col-md-3 col-sm-4 col-6 m-sm-2 mt-3 mb-4' onClick={() => handleClick(industry.Id)} style={{ cursor: 'pointer' }}>
-                                <div className="industry-box h-100 shadow-lg py-5"  data-aos="fade-up"
+                                <div className="industry-box h-100 shadow-lg py-3 py-lg-4"  data-aos="fade-up"
                             data-aos-delay={`${index * 250}`} data-aos-duration="2000" data-aos-once="true" >
                                     <div className="industry-icon">{industry.icon}</div>
                                     <h3 className="industry-name">{industry.title}</h3>

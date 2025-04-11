@@ -14,7 +14,7 @@ function ContactInfo() {
                     <div className="col-12 col-lg-6 p-3">
                         <div className='h-100'>
                             <TitleHead ftitle={"Contact"} stitle={"Us"} />
-                            <p className='fw-medium pera text-secondary' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sint ea illo atque eum natus omnis quis maxime alias sed.</p>
+                            <p className='fw-medium pera text-secondary pera' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sint ea illo atque eum natus omnis quis maxime alias sed.</p>
                             <div className='d-lg-flex d-md-flex w-100 justify-content-center mt-4'>
                                 <div className='main_contactBox d-flex w-100 w-lg-50 w-md-50'>
                                     <div className='main_contact'>
@@ -65,9 +65,9 @@ function ContactInfo() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-12 col-lg-6 p-3">
+                    <div className="col-12 col-lg-6 ">
                         <div className="Contact_cont h-100" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
-                            <div className='p-4'>
+                            <div className='p-5'>
                                 <div className='d-flex justify-content-center gap-3'>
                                     <div className='w-50'>
                                         <label htmlFor="" className='text-white'>Name</label>
@@ -87,6 +87,7 @@ function ContactInfo() {
                                     <textarea name="message" id="" rows={5} className='d-block w-100 mt-1 py-1 px-2 rounded text-white' style={{ outline: "none", border: "none", background: "#f5f5f594" }}></textarea>
                                 </div>
                                 <div className='text-center mt-3'>
+                                    
                                     <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Submit</button>
                                 </div>
                             </div>

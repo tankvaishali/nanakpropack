@@ -116,7 +116,8 @@ function HomeCarousel() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="position-fixed bottom-0 end-0 m-4 bg-success rounded-circle p-3 shadow text-decoration-none text-light"
-            >
+         style={{zIndex:900000}}
+         >
                 <FaWhatsapp className='fs-3' />
             </a>
         </div >

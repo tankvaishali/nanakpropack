@@ -30,8 +30,9 @@ function HomeAboutSec() {
                             <p className="fw-medium pera">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe deserunt reiciendis, blanditiis pariatur consectetur a illum sunt totam magni illo veritatis explicabo, eveniet, repudiandae labore praesentium esse ipsum tenetur doloribus?
                             </p>
-                            <Link to={"/companyinfo"}>
-                                <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> About Us</button>
+                            <Link to={"/companyinfo"} className='text-decoration-none'>
+                            
+                                <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> About Us</button>
                             </Link>
                         </div>
                     </div>

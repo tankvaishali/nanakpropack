@@ -24,7 +24,7 @@ icon:<FaMicrochip/>,
       <div className="mission_bg " >
         <div className="container py-5">
           <div className="row py-3">
-            <div className="col-lg-3 col-12 col-md-6 p-5 p-md-4">
+            <div className="col-lg-3 col-12 col-md-6 p-4">
               <div className="h-100 d-flex flex-column text-center"  data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
                 <div className="cardcss p-2 flex-grow-1 text-white">
                   <div class="serviceicon">
@@ -36,7 +36,7 @@ icon:<FaMicrochip/>,
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-12 col-md-6 p-5 p-md-4">
+            <div className="col-lg-3 col-12 col-md-6 p-4 ">
               <div className="h-100 d-flex flex-column text-center"  data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
                 <div className="cardcss p-2 flex-grow-1 text-white">
                   <div class="serviceicon">
@@ -48,7 +48,7 @@ icon:<FaMicrochip/>,
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-12 col-md-6 p-5 p-md-4 ">
+            <div className="col-lg-6 col-12 col-md-6 p-2 p-md-4 ">
   <div className="h-100  text-white p-4 d-flex flex-column justify-content-between pera"  data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
     <div>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, cupiditate.

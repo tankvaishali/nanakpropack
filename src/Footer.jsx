@@ -16,7 +16,7 @@ function Footer() {
 </div>
         </div>
 
-<div className="col-12 col-lg-4 py-4 py-lg-5">
+<div className="col-12 col-lg-4 pt-4 pt-lg-5 pb-0 pb-lg-3">
   <div className="h-100 text-white text-center">
     <div>
       <h2 className="border-bottom border-success mx-auto border-3 pb-2" style={{width:"fit-content"}}>Useful Links</h2>
@@ -28,7 +28,7 @@ function Footer() {
     <div className='py-1'><Link to={"/faq"} className='text-white text-decoration-none pera'>Faq</Link></div>
   </div>
 </div>
-<div className="col-12 col-lg-4 py-4 py-lg-5">
+<div className="col-12 col-lg-4 pt-4 pt-lg-5 pb-0 pb-lg-3">
   <div className="h-100 text-white text-center">
     <div>
       <h2 className="border-bottom border-success mx-auto border-3 pb-2" style={{width:"fit-content"}}>Social Media</h2>

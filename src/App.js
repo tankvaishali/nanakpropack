@@ -6,11 +6,13 @@ import Companyinfo from './About/Companyinfo';
 import HomePage from './Home/HomePage';
 import IndustryInner from './Home/IndustryInner';
 import ContactPage from './Contact/ContactPage';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path="/industry/:Id" element={<IndustryInner />} />

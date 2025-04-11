@@ -3,6 +3,7 @@ import { Departments } from './ProductDepartment';
 import emailjs from '@emailjs/browser';
 import TitleHead from '../TitleHead';
 import { TiArrowRight } from 'react-icons/ti';
+import { GrClose } from 'react-icons/gr';
 
 function ProductData() {
     const [showModal, setShowModal] = useState(false);
@@ -134,17 +135,18 @@ function ProductData() {
                                         <p className='text-light pera'>{item.ProductDetails}</p>
                                     </div>
                                     <div>
-                                        <button type='button' onClick={() => setShowModal(true)} className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Get Quote</button>
-                                    </div>
-                                </div>
+                                        <button onClick={() => setShowModal(true)} type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> Get Quote</button>  </div>
+
+                                    
                             </div>
+                        </div>
                         </div>
                     ))}
 
-                </div>
             </div>
+        </div >
 
-            {showModal && (
+            { showModal && (
                 <div
                     className="modal d-flex align-items-center justify-content-center"
                     tabIndex="-1"
@@ -171,11 +173,14 @@ function ProductData() {
                             overflowY: 'auto',
                         }}
                     >
+
+
+
                         <button
                             type="button"
-                            className="btn-close position-absolute top-0 end-0 m-3"
+                            className="btn-close position-absolute top-0 end-0 m-3 text-dark d-flex align-items-center justify-content-center p-2"
                             onClick={() => setShowModal(false)}
-                        ></button>
+                        ><h4><GrClose /></h4></button>
 
 
                         <TitleHead ftitle={"Design"} stitle={"Your Own Box"} />
@@ -314,13 +319,15 @@ function ProductData() {
                                 </div>
                             </div>
 
-                            <div className='text-center mt-4'>
-                                <button type='submit' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Submit Design Request</button>
-                            </div>
+                            <div className='text-center d-flex align-items-center justify-content-center mt-4'>
+                                                                <button type='submit' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> Submit Design Request</button>  </div>
+                                
+                            
                         </form>
                     </div>
                 </div>
-            )}
+            )
+}
         </>
     )
 }

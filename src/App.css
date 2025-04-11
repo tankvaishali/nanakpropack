@@ -81,7 +81,9 @@ body {
   height: 40px;
   clip-path: polygon(100% 0, 50% 50%, 100% 100%, 0% 100%, 50% 50%, 0% 0%);
 }
-
+.offcanvas-backdrop {
+  background-color: white !important;
+}
 /* Header End */
 
 /* body end */
@@ -91,8 +93,8 @@ body {
   background-image: url("https://img.freepik.com/free-vector/realistic-white-golden-geometric-background_79603-2032.jpg?t=st=1744103633~exp=1744107233~hmac=9fb65d27892793345f88e2d19e044b7d91933acce046bf1785a797a7ba8368c3&w=996");
   height: 400px;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
+  background-size:cover;
+  /* background-position: center; */
   box-shadow: inset 0px 0px 1500px rgb(0, 66, 0);
 }
 

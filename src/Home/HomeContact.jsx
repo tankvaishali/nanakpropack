@@ -54,10 +54,8 @@ function HomeContact() {
                                     <textarea name="message" id="" required placeholder='Write Your Message Here...' rows={8} className='input-home w-100 mt-2 p-2 border-0' style={{ outline: "none", background: "#f5f5f594" }}></textarea>
                                 </div>
 
-                                <div className='text-center mt-4'>
-                                    <button type='submit' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'>
-                                        <TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Submit
-                                    </button>
+                                <div className='text-center mt-4 d-flex justify-content-center'>
+                                    <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> Submit</button>
                                 </div>
                             </div>
                         </form>
