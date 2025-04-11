@@ -30,9 +30,9 @@ function AboutSec() {
                     <div className='row d-flex justify-content-center align-items-center align-content-center'>
                         <div className='col-12 col-lg-4 col-md-12' data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                             <div className='py-5'>
-                            <TitleHead ftitle={"About"} stitle={"Us"}/>
+                                <TitleHead ftitle={"About"} stitle={"Us"} />
                                 <div className='pb-3 pera' style={{ textAlign: "justify" }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequatur ducimus, vero adipisci, ipsa porro tenetur illo aut expedita laudantium accusamus quibusdam deserunt facere eos fugiat. Ex nisi deleniti minus!</div>
-                                <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Learn More</button>
+                                <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Learn More</button>
                             </div>
                         </div>
                         <div className='col-12 col-lg-4 col-md-6 ' data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
@@ -40,7 +40,7 @@ function AboutSec() {
                                 <img src={require("../assets/images/BakeryPackagingMockup006-removebg-preview.png")} className='object-fit-cover w-100 h-100 rounded-5' alt="" />
                             </div>
                         </div>
-                        <div className='col-12 col-lg-4 col-md-6'  data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+                        <div className='col-12 col-lg-4 col-md-6' data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
                             <div className='py-4'>
                                 {features.map((feature, index) => (
                                     <div className={`tittlebox d-flex p-3 rounded-pill shadow ${index !== 0 ? 'my-3' : ''}`} key={index}>

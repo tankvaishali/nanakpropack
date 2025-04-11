@@ -1,19 +1,30 @@
 /* ContactInfo start */
-.contact-icon {
-  transition: transform 0.4s ease;
-}
-.main_contactBox:hover .contact-icon {
-  transform: rotateY(200deg);
-}
 .main_contact {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 .Contact_icon-wrapper {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 69% 26% 49% 70% / 36% 50% 62% 61%;
-  background-color: rgba(0, 77, 33, 0.872);
+  background-color: #00701eaf;
+  position: relative;
+}
+.contact-icon {
+  position: absolute;
+  font-size: 48px;
+  bottom: -10px;
+  right: -10px;
+  transition: all 0.4s ease-in-out;
+}
+.main_contactBox:hover .contact-icon {
+  right: 0px !important;
+}
+.contactForm_cont {
+  transition: all 0.4s ease-in-out;
+}
+.main_contactBox:hover .contactForm_cont {
+  margin-left: 10px !important;
 }
 .Contact_cont {
   background-color: var(--green);

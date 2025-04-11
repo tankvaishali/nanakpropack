@@ -76,7 +76,7 @@ function HomeProduct() {
                                         <Link to={"/product"}>
                                             <button
                                                 type='button'
-                                                className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'
+                                                className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'
                                             >
                                                 <TiArrowRight
                                                     className='bg-white rounded-5 fs-6'

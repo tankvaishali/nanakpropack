@@ -134,7 +134,7 @@ function ProductData() {
                                         <p className='text-light pera'>{item.ProductDetails}</p>
                                     </div>
                                     <div>
-                                        <button type='button' onClick={() => setShowModal(true)} className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Get Quote</button>
+                                        <button type='button' onClick={() => setShowModal(true)} className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Get Quote</button>
                                     </div>
                                 </div>
                             </div>
@@ -315,7 +315,7 @@ function ProductData() {
                             </div>
 
                             <div className='text-center mt-4'>
-                                <button type='submit' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Submit Design Request</button>
+                                <button type='submit' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Submit Design Request</button>
                             </div>
                         </form>
                     </div>

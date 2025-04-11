@@ -1,9 +1,10 @@
 import React from 'react'
 import TitleHead from '../TitleHead'
-import { FaMapLocationDot, FaRegClock } from 'react-icons/fa6'
-import { FaMailBulk } from 'react-icons/fa'
-import { BiSolidPhoneCall } from 'react-icons/bi'
+import { FaRegClock } from 'react-icons/fa6'
 import { TiArrowRight } from 'react-icons/ti'
+import { LiaMailBulkSolid } from 'react-icons/lia'
+import { TbPhoneCall } from 'react-icons/tb'
+import { SlLocationPin } from 'react-icons/sl'
 
 function ContactInfo() {
     return (
@@ -18,10 +19,10 @@ function ContactInfo() {
                                 <div className='main_contactBox d-flex w-100 w-lg-50 w-md-50'>
                                     <div className='main_contact'>
                                         <div className="Contact_icon-wrapper text-center align-content-center">
-                                            <FaMailBulk className="p-1 text-white contact-icon" style={{ fontSize: "30px" }} />
+                                            <LiaMailBulkSolid className="p-1 text-white contact-icon" />
                                         </div>
                                     </div>
-                                    <div className='ms-2'>
+                                    <div className='ms-3 contactForm_cont'>
                                         <h4 className="text-capitalize fw-bold">E-mail</h4>
                                         <p className='fw-medium pera'>abc@gmail.com</p>
                                     </div>
@@ -29,10 +30,10 @@ function ContactInfo() {
                                 <div className='main_contactBox d-flex w-100 w-lg-50 w-md-50'>
                                     <div className='main_contact'>
                                         <div className="Contact_icon-wrapper text-center align-content-center">
-                                            <BiSolidPhoneCall className="p-1 text-white contact-icon" style={{ fontSize: "30px" }} />
+                                            <TbPhoneCall className="p-1 text-white contact-icon" />
                                         </div>
                                     </div>
-                                    <div className='ms-2'>
+                                    <div className='ms-3 contactForm_cont'>
                                         <h4 className="text-capitalize fw-bold">Phone No.</h4>
                                         <p className='fw-medium pera'>(+91) 12345 67890</p>
                                     </div>
@@ -42,10 +43,10 @@ function ContactInfo() {
                                 <div className='main_contactBox d-flex w-100 w-lg-50 w-md-50'>
                                     <div className='main_contact'>
                                         <div className="Contact_icon-wrapper text-center align-content-center">
-                                            <FaMapLocationDot className="p-1 text-white contact-icon" style={{ fontSize: "30px" }} />
+                                            <SlLocationPin className="p-1 text-white contact-icon" />
                                         </div>
                                     </div>
-                                    <div className='ms-2'>
+                                    <div className='ms-3 contactForm_cont'>
                                         <h4 className="text-capitalize fw-bold">Address</h4>
                                         <p className='fw-medium pera'>Jimbaran Regency ST.2290 DPS, Bali.</p>
                                     </div>
@@ -53,10 +54,10 @@ function ContactInfo() {
                                 <div className='main_contactBox d-flex w-100 w-lg-50 w-md-50'>
                                     <div className='main_contact'>
                                         <div className="Contact_icon-wrapper text-center align-content-center">
-                                            <FaRegClock className="p-1 text-white contact-icon" style={{ fontSize: "30px" }} />
+                                            <FaRegClock className="p-1 text-white contact-icon" />
                                         </div>
                                     </div>
-                                    <div className='ms-2'>
+                                    <div className='ms-3 contactForm_cont'>
                                         <h4 className="text-capitalize fw-bold">Work Hours</h4>
                                         <p className='fw-medium pera'>Everyday 08:00 AM - 07:00 PM</p>
                                     </div>

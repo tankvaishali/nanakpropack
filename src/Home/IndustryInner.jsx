@@ -43,7 +43,7 @@ function IndustryInner() {
                     </div>
                 </div>
                 <div className='text-center mt-4'>
-                    <button type='button' onClick={() => navigate(-1)} className='Aboutbtn border-0 fw-bold text-white rounded-5 px-3 pb-3 pt-2'><TiArrowLeft className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Back</button>
+                    <button type='button' onClick={() => navigate(-1)} className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowLeft className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Back</button>
                 </div>
             </div>
         </>
