@@ -24,7 +24,7 @@ function Footer() {
     <div className='py-1'><Link to={"/"} className='text-white text-decoration-none pera'>Home</Link></div>
     <div className='py-1'><Link to={"/companyinfo"} className='text-white text-decoration-none pera'>Company Info</Link></div>
     <div className='py-1'><Link to={"/product"} className='text-white text-decoration-none pera'>Products</Link></div>
-    <div className='py-1'><Link to={"/"} className='text-white text-decoration-none pera'>Contact Us</Link></div>
+    <div className='py-1'><Link to={"/contact"} className='text-white text-decoration-none pera'>Contact Us</Link></div>
     <div className='py-1'><Link to={"/faq"} className='text-white text-decoration-none pera'>Faq</Link></div>
   </div>
 </div>

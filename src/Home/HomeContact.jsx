@@ -1,20 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { TiArrowRight } from 'react-icons/ti'
-import TitleHead from '../TitleHead'
 
 function HomeContact() {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.send("service_zepm12o", "template_7ul0y5d", formData, "riFOd-JVCm2W9dXYR")
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Your design request has been sent successfully!');
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: ''
+                });
+            }, (err) => {
+                console.error('FAILED...', err);
+                alert('There was an error sending your request. Please try again later.');
+            });
+    };
+
     return (
         <>
             <div className='Home_contact_bg py-5 mb-5'>
                 <div className='container'>
                     <div className='row justify-content-center'>
-                       
-                        <div className="text-center text-white"><TitleHead ftitle={"Let's Conversation"} stitle={"With Us !"}/></div>
-                        <p className='pera text-center text-white' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos nam deleniti ipsam voluptatum dolores voluptate nisi qui ut dolor nostrum?</p>
+                        <h1 className='fw-bold text-center text-white'>Let's Conversation With Us!</h1>
                         <div className='col-12 col-lg-8 p-3'>
                             <div className='w-100 d-flex justify-content-center gap-3'>
                                 <div className='w-50'>
-                                    <label htmlFor="" className='d-block text-white'>Name </label>
+                                    <label htmlFor="" className='d-block text-white'>Name</label>
                                     <input type="text" name="name" id="" className='input-home w-100 mt-2 p-2 border-0' style={{ outline: "none", background: "#f5f5f594" }} />
                                 </div>
                                 <div className='w-50'>
@@ -29,7 +51,7 @@ function HomeContact() {
                             <div className='text-center mt-4'>
                                 <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Submit</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
