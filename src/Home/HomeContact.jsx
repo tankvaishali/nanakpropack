@@ -30,7 +30,7 @@ function HomeContact() {
 
     return (
         <>
-            <div className='Home_contact_bg py-5 mb-5'>
+            <div className='Home_contact_bg py-5'>
                 <div className='container'>
                     <div className='row justify-content-center'>
                         <h1 className='fw-bold text-center text-white'>Let's Conversation With Us!</h1>
