@@ -95,7 +95,7 @@ function HomeService() {
             <div className='h-100'>
                 <div className='my-2'>{service.icon}</div>
                 <h3 className='fw-bold service_tittle'>{service.title}</h3>
-                <p className='fw-medium pera text-secondary pera'>{service.description}</p>
+                <p className='fw-medium text-secondary pera'>{service.description}</p>
             </div>
         </div>
     );
