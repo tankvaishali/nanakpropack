@@ -72,18 +72,10 @@ function HomeProduct() {
                                         </div>
                                         <h5 className='fw-semibold mt-3 text-center'>{product.name}</h5>
                                     </div>
-                                    <div className='product_content text-center mt-2'>
-                                        <Link to={"/product"}>
-                                            <button
-                                                type='button'
-                                                className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'
-                                            >
-                                                <TiArrowRight
-                                                    className='bg-white rounded-5 fs-6'
-                                                    style={{ color: 'rgb(17, 107, 107)' }}
-                                                />{' '}
-                                                View More
-                                            </button>
+                                    <div className='product_content mt-2 d-flex justify-content-center'>
+                                        <Link to={"/product"} className='text-decoration-none'>
+                                         <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center justify-content-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} />  View More</button> 
+                                          
                                         </Link>
                                     </div>
                                 </div>

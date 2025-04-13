@@ -86,10 +86,10 @@ function ContactInfo() {
                                     <label htmlFor="" className='text-white mt-2'>Message</label>
                                     <textarea name="message" id="" rows={5} className='d-block w-100 mt-1 py-1 px-2 rounded text-white' style={{ outline: "none", border: "none", background: "#f5f5f594" }}></textarea>
                                 </div>
-                                <div className='text-center mt-3'>
+                                <div className='text-center mt-3 d-flex justify-content-center'>
+                                     <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center justify-content-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> Submit</button>  </div>
                                     
-                                    <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 px-4 pb-3 pt-3'><TiArrowRight className='bg-white rounded-5 fs-6' style={{ color: "rgb(17, 107, 107)" }} /> Submit</button>
-                                </div>
+                          
                             </div>
                         </div>
                     </div>
