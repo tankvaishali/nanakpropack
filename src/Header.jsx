@@ -14,18 +14,18 @@ function Header() {
   const Website = "nanakpropack.vercel.app"
   const value = `Name:${name}\n\nWebsite:${encodeURIComponent(Website)}\n\nOwner:${owner}\n\nEmail:${email}`;
   const List = [
-    { ListName: "Home" },
-    { ListName: "Company-info" },
-    { ListName: "Products" },
-    { ListName: "Contact-Us" },
-    { ListName: "Faq" }
+    { ListName: "Home", path: '/' },
+    { ListName: "Company-info", path: '/companyinfo' },
+    { ListName: "Products", path: '/product' },
+    { ListName: "Contact-Us", path: '/contact' },
+    { ListName: "Faq", path: '/faq' }
   ]
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [animatedItems, setAnimatedItems] = useState([]);
 
   useEffect(() => {
-    const menu = document.getElementById('staticBackdrop');
+    const menu = document.getElementById('offcanvasWithBothOptions');
 
     const handleShow = () => {
       setIsMenuOpen(true);
@@ -85,7 +85,7 @@ function Header() {
                 <img src={require('./assets/images/nanak_logo_BGremove.png')} alt="Logo" height={70} />
               </div>
             </Link>
-            <button className="btn d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            <button className="btn d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
               <FiMenu size={24} />
             </button>
             <div className="d-none d-lg-block text-center justify-content-center col-8">
@@ -94,16 +94,16 @@ function Header() {
                   <Link to={'/'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase text-nowrap' style={{ fontSize: '14px' }}>Company-Info</Link>
+                  <Link to={'/companyinfo'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase text-nowrap' style={{ fontSize: '14px' }}>Company-Info</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>Products</Link>
+                  <Link to={'/product'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>Products</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase text-nowrap' style={{ fontSize: '14px' }}>Contact-Us</Link>
+                  <Link to={'/contact'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase text-nowrap' style={{ fontSize: '14px' }}>Contact-Us</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to={'/'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>Faq</Link>
+                  <Link to={'/faq'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>Faq</Link>
                 </li>
               </ul>
             </div>
@@ -116,8 +116,7 @@ function Header() {
       </div>
 
       {/* Offcanvas Menu */}
-      <div className="offcanvas offcanvas-start" tabIndex="-1" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel" style={{ zIndex: 15000 }}>
-
+      <div className="offcanvas offcanvas-start" tabIndex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel" style={{ zIndex: 15000 }}>
         <div className="offcanvas-body" style={{ backgroundImage: "linear-gradient(0deg, rgb(0 12 9), rgb(122 197 157), rgb(228 255 243), rgb(255 255 255))" }}>
           <Link className="navbar-brand col-2" to="/">
             <div className='text-center' >
@@ -150,7 +149,7 @@ function Header() {
                     }}></div>
                   </div>
                   <div className='col-8'>
-                    <Link to={'/'} className='text-decoration-none text-light fw-bold text-uppercase p-3 text-center text-nowrap'>{item.ListName}</Link>
+                    <Link to={`${item.path}`} className='text-decoration-none text-light fw-bold text-uppercase p-3 text-center text-nowrap'>{item.ListName}</Link>
                   </div>
                 </li>
               )
