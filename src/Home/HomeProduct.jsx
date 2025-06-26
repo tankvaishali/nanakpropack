@@ -35,19 +35,19 @@ function HomeProduct() {
     const products = [
         {
             name: 'Packaging',
-            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
+            img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_38_35 PM.png'),
         },
         {
             name: 'Packaging',
-            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
+            img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_44_49 PM.png'),
         },
         {
             name: 'Packaging',
-            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
+            img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_47_26 PM.png'),
         },
         {
             name: 'Packaging',
-            img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4lDhdY9O0odI30HmdH092CbbtMX1PT1SA9A&s',
+            img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_59_52 PM.png'),
         },
     ]
     return (
@@ -74,8 +74,8 @@ function HomeProduct() {
                                     </div>
                                     <div className='product_content mt-2 d-flex justify-content-center'>
                                         <Link to={"/product"} className='text-decoration-none'>
-                                         <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center justify-content-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} />  View More</button> 
-                                          
+                                            <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center justify-content-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} />  View More</button>
+
                                         </Link>
                                     </div>
                                 </div>
