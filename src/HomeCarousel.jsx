@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Slider from 'react-slick';
 
 function HomeCarousel() {
-    const img = "http://webdesign-finder.com/weldo-grandbox/wp-content/uploads/2020/11/photo-1512909006721-3d6018887383.jpg"
+    const img = require('./assets/images/HomeCarouselMainImg.jpg')
     var settings = {
         dots: false,
         infinite: true,
@@ -52,7 +52,7 @@ function HomeCarousel() {
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/BakeryPackagingMockup006-removebg-preview.png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (1).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
@@ -62,7 +62,7 @@ function HomeCarousel() {
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/BakeryPackagingMockup006-removebg-preview.png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (2).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ function HomeCarousel() {
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/BakeryPackagingMockup006-removebg-preview.png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (3).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ function HomeCarousel() {
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/BakeryPackagingMockup006-removebg-preview.png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (4).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@ function HomeCarousel() {
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/BakeryPackagingMockup006-removebg-preview.png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (5).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@ function HomeCarousel() {
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/BakeryPackagingMockup006-removebg-preview.png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (6).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
