@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import { Departments } from './ProductDepartment';
 import emailjs from '@emailjs/browser';
 import TitleHead from '../TitleHead';
@@ -137,16 +137,16 @@ function ProductData() {
                                     <div>
                                         <button onClick={() => setShowModal(true)} type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> Get Quote</button>  </div>
 
-                                    
+
+                                </div>
                             </div>
-                        </div>
                         </div>
                     ))}
 
-            </div>
-        </div >
+                </div>
+            </div >
 
-            { showModal && (
+            {showModal && (
                 <div
                     className="modal d-flex align-items-center justify-content-center"
                     tabIndex="-1"
@@ -320,14 +320,14 @@ function ProductData() {
                             </div>
 
                             <div className='text-center d-flex align-items-center justify-content-center mt-4'>
-                                                                <button type='submit' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> Submit Design Request</button>  </div>
-                                
-                            
+                                <button type='submit' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> Submit Design Request</button>  </div>
+
+
                         </form>
                     </div>
                 </div>
             )
-}
+            }
         </>
     )
 }

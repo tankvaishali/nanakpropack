@@ -1,7 +1,6 @@
-import React from 'react';
 import HOC from '../HOC';
 import AboutSec from './AboutSec';
-import "../assets/css/About.css"
+import "../assets/css/About.css";
 import PackagingSection from './PackagingSection';
 import MissionvisionSec from './MissionvisionSec';
 import { Link } from 'react-router-dom';

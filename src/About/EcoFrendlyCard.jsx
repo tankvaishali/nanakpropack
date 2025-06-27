@@ -1,6 +1,5 @@
-import React from 'react'
-import { FaRecycle } from 'react-icons/fa'
-import { FaArrowsRotate, FaCircleCheck } from 'react-icons/fa6'
+import { FaRecycle } from 'react-icons/fa';
+import { FaArrowsRotate, FaCircleCheck } from 'react-icons/fa6';
 import { IoFlaskSharp } from 'react-icons/io5';
 import TitleHead from '../TitleHead';
 

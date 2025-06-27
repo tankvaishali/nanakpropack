@@ -1,5 +1,4 @@
-import React from 'react'
-import { TiArrowRight } from 'react-icons/ti'
+import { TiArrowRight } from 'react-icons/ti';
 import Slider from 'react-slick';
 import TitleHead from '../TitleHead';
 import { Link } from 'react-router-dom';
@@ -34,19 +33,23 @@ function HomeProduct() {
     };
     const products = [
         {
-            name: 'Packaging',
+            name: '6 feet by 6 feet by 6 feet',
             img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_38_35 PM.png'),
         },
         {
-            name: 'Packaging',
+            name: '14 feet by 18 feet by 18 feet',
             img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_44_49 PM.png'),
         },
         {
-            name: 'Packaging',
+            name: 'Corrugated Craft Paper Box',
             img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_47_26 PM.png'),
         },
         {
-            name: 'Packaging',
+            name: 'Corrugated Craft Paper Box',
+            img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_47_26 PM.png'),
+        },
+        {
+            name: 'Wooden Storage Divider Box',
             img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_59_52 PM.png'),
         },
     ]
@@ -55,7 +58,7 @@ function HomeProduct() {
             <div className='container my-5 pb-5'>
                 <div className='text-center'>
                     <TitleHead ftitle={"Our Featured"} stitle={"Products"} />
-                    <p className='pera' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi temporibus doloribus odio corporis voluptas. Odit voluptates dignissimos obcaecati laboriosam voluptatibus.</p>
+                    <p className='pera' data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">Discover our best-selling, eco-friendly packaging solutions—crafted for quality and built to impress.</p>
                 </div>
                 <Slider {...settings}>
                     {products.map((product, index) => (

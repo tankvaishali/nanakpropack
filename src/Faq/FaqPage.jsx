@@ -1,4 +1,3 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import "../assets/css/Faq.css";
@@ -54,7 +53,7 @@ const FaqPage = () => {
                         <div className="h-100 ">
 
                             <TitleHead ftitle={"Need-To-Know"} stitle={"Information"} />
-                            <p className='pera'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, consequatur eveniet. Odio cumque, repudiandae accusamus assumenda itaque cupiditate perferendis amet!</p>
+                            <p className='pera'>Find quick answers to common questions about our packaging products, services, and customization options.</p>
                             <div className="accordion" id="accordionExample">
                                 {faqData.map((item, index) => {
                                     const headingId = `heading${index}`;

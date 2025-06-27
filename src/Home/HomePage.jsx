@@ -1,4 +1,3 @@
-import React from 'react'
 import HOC from '../HOC';
 import "../assets/css/Home.css";
 import HomeAboutSec from './HomeAboutSec';

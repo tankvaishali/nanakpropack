@@ -1,4 +1,3 @@
-import React from 'react'
 import TitleHead from '../TitleHead'
 import { FaRegClock } from 'react-icons/fa6'
 import { TiArrowRight } from 'react-icons/ti'

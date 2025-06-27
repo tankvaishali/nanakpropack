@@ -1,4 +1,3 @@
-import React from 'react';
 import { CgArrowLongDown } from 'react-icons/cg';
 import { FaWhatsapp } from "react-icons/fa";
 import Slider from 'react-slick';

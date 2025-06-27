@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { TiArrowRight } from 'react-icons/ti'
+import { useState } from 'react';
+import { TiArrowRight } from 'react-icons/ti';
 import emailjs from '@emailjs/browser';
 import TitleHead from '../TitleHead';
 

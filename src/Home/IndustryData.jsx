@@ -9,7 +9,7 @@ export const IndustryData = [
         title: "Food & Beverage",
         subtitle: "Custom Solutions for Perishable Goods",
         icon: <Utensils size={35} />,
-        img: "https://www.shutterstock.com/image-photo/different-packages-carton-cups-on-260nw-1132674923.jpg",
+        img: require('../assets/images/food_baverage.jpg'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Innovative packaging for perishable items</div>
@@ -25,7 +25,7 @@ export const IndustryData = [
         title: "Retail & E-Commerce",
         subtitle: "Smart Packaging for Seamless Shopping Experiences",
         icon: <ShoppingCart size={35} />,
-        img: "https://www.shutterstock.com/image-photo/boxes-paper-bags-260nw-1160463666.jpg",
+        img: require('../assets/images/retail_ecommerce.jpg'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Secure packaging for shipping and returns</div>
@@ -41,7 +41,7 @@ export const IndustryData = [
         title: "Health & Beauty",
         subtitle: "Premium Packaging for Personal Care Products",
         icon: <Heart size={35} />,
-        img: "https://www.shutterstock.com/image-photo/cosmetic-bottles-packaging-260nw-1018281233.jpg",
+        img: require('../assets/images/health_beauty.jpg'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Premium packaging for luxury beauty products</div>
@@ -57,7 +57,7 @@ export const IndustryData = [
         title: "Electronics & Technology",
         subtitle: "Tech-Savvy Solutions for Delicate Devices",
         icon: <Cpu size={35} />,
-        img: "https://www.shutterstock.com/image-photo/electronics-packaging-box-260nw-1160463665.jpg",
+        img: require('../assets/images/electronics_packaging.webp'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Shock-resistant packaging for gadgets</div>
@@ -73,7 +73,7 @@ export const IndustryData = [
         title: "Medical & Pharmaceutical",
         subtitle: "Safe & Compliant Packaging for Healthcare Products",
         icon: <GiMedicinePills size={35} />,
-        img: "https://www.shutterstock.com/image-photo/medical-packaging-pills-260nw-1160463667.jpg",
+        img: require('../assets/images/pharmaceutical_medical.webp'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Sterile packaging for medical devices</div>
@@ -89,7 +89,7 @@ export const IndustryData = [
         title: "Automotive & Industrial",
         subtitle: "Durable Solutions for Heavy-Duty Industries",
         icon: <Settings size={35} />,
-        img: "https://www.shutterstock.com/image-photo/automotive-packaging-box-260nw-1160463668.jpg",
+        img: require('../assets/images/automobile_industry.jpg'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Heavy-duty packaging for industrial products</div>
@@ -105,7 +105,7 @@ export const IndustryData = [
         title: "Agriculture",
         subtitle: "Sustainable Solutions for the Agriculture Industry",
         icon: <Leaf size={35} />,
-        img: "https://www.shutterstock.com/image-photo/agriculture-packaging-box-260nw-1160463669.jpg",
+        img: require('../assets/images/agriculture.avif'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Biodegradable packaging solutions</div>
@@ -121,7 +121,7 @@ export const IndustryData = [
         title: "Luxury Goods",
         subtitle: "Elegant Packaging for High-End Brands",
         icon: <Diamond size={35} />,
-        img: "https://www.shutterstock.com/image-photo/luxury-packaging-box-260nw-1160463670.jpg",
+        img: require('../assets/images/Luxury_Goodes.jpg'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Elegant and premium packaging designs</div>
@@ -137,7 +137,7 @@ export const IndustryData = [
         title: "Education & Publishing",
         subtitle: "Creative Packaging for Educational Products",
         icon: <BookOpen size={35} />,
-        img: "https://www.shutterstock.com/image-photo/education-packaging-box-260nw-1160463671.jpg",
+        img: require('../assets/images/education_publishing.webp'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Durable packaging for books and stationery</div>
@@ -153,7 +153,7 @@ export const IndustryData = [
         title: "Sports & Outdoors",
         subtitle: "Rugged Packaging for Outdoor and Sports Gear",
         icon: <MdOutlineSportsSoccer size={35} />,
-        img: "https://www.shutterstock.com/image-photo/sports-packaging-box-260nw-1160463672.jpg",
+        img: require('../assets/images/sports-outdoor.jpg'),
         content: (
             <div>
                 <div className="py-1"><RiBox3Fill className="text-success fs-5 fw-bold" /> Weather-resistant packaging for outdoor gear</div>

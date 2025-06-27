@@ -1,4 +1,3 @@
-import React from 'react'
 import { TiArrowRight } from 'react-icons/ti'
 import { HiOutlineHandThumbUp } from 'react-icons/hi2'
 import { MdOutlineSupportAgent } from 'react-icons/md'
@@ -9,17 +8,17 @@ const features = [
     {
         icon: <HiOutlineHandThumbUp className='text-white fs-1' />,
         title: 'Premium Quality',
-        description: 'Lorem ipsum dolor sit amet.'
+        description: 'Durable, reliable, elegant'
     },
     {
         icon: <MdOutlineSupportAgent className='text-white fs-1' />,
         title: '24/7 Support',
-        description: 'Lorem ipsum dolor sit amet.'
+        description: 'Always available help'
     },
     {
         icon: <BiLeaf className='text-white fs-1' />,
         title: 'Eco Friendly',
-        description: 'Lorem ipsum dolor sit amet.'
+        description: 'Sustainable, green choice'
     }
 ];
 function AboutSec() {
@@ -31,7 +30,13 @@ function AboutSec() {
                         <div className='col-12 col-lg-4 col-md-12' data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                             <div className='py-5'>
                                 <TitleHead ftitle={"About"} stitle={"Us"} />
-                                <div className='pb-3 pera' style={{ textAlign: "justify" }}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod consequatur ducimus, vero adipisci, ipsa porro tenetur illo aut expedita laudantium accusamus quibusdam deserunt facere eos fugiat. Ex nisi deleniti minus!</div>
+                                <div className='pb-3 pera' style={{ textAlign: "justify" }}>
+                                    In a very short span of time boxiz stands out
+                                    as one of a kind company where we not only
+                                    cater to packaging needs but also help you in
+                                    your designing journey, therefore
+                                    transforming a basic product into a branding
+                                    portal.</div>
                                 <button type='button' className='Aboutbtn border-0 fw-bold text-white rounded-5 p-2 px-3 d-flex align-items-center'><TiArrowRight className='bg-white rounded-5 fs-6 me-2' style={{ color: "rgb(17, 107, 107)" }} /> Learn More</button>  </div>
                         </div>
                         <div className='col-12 col-lg-4 col-md-6 ' data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">

@@ -1,5 +1,3 @@
-import React from 'react';
-import CountUp from 'react-countup';
 import { GiStairsGoal } from 'react-icons/gi';
 import { GoGoal } from 'react-icons/go';
 import { FaLeaf, FaShieldAlt, FaMicrochip } from 'react-icons/fa';
@@ -32,7 +30,7 @@ function MissionvisionSec() {
                   </div>
                   <h1 className='text-success fw-bold '><GoGoal /></h1>
                   <h5 className=" pinkcolor fw-bold py-3 ">MISSION</h5>
-                  <p className="pera text-secondary fw-medium" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, libero.</p>
+                  <p className="pera text-secondary fw-medium" >To be Committed to quality and innovation</p>
                 </div>
               </div>
             </div>
@@ -44,17 +42,19 @@ function MissionvisionSec() {
                   </div>
                   <h1 className='text-success fw-bold '><GiStairsGoal /></h1>
                   <h5 className=" pinkcolor fw-bold py-3 ">VISION</h5>
-                  <p className="pera text-secondary fw-medium" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, libero.</p>
+                  <p className="pera text-secondary fw-medium" >To create a sustainable packaging technique
+                    that aims to eliminate waste by reusing,
+                    recycling or composting materials.</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 col-12 col-md-12 p-2 p-md-4 ">
               <div className="h-100  text-white p-4 d-flex flex-column justify-content-between pera" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
                 <div>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, cupiditate.
+                  Our mission is to deliver innovative, sustainable, and high-quality packaging solutions that protect products and elevate brands, while our vision is to lead the way in eco-conscious packaging to embrace smarter, greener alternatives.
                 </div>
                 <div className="text-secondary pt-2 fw-medium pera">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem unde tenetur perferendis deserunt nulla.
+                  We aim to provide sustainable, high-quality packaging that protects, promotes, and leads the future of eco-friendly innovation."
                 </div>
 
                 <div className="row justify-content-evenly justify-content-lg-center g-3 mt-2">

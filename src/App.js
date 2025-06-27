@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path="/industry/:Id" element={<IndustryInner />} />

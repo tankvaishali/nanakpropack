@@ -21,6 +21,7 @@
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -49,7 +50,7 @@
   animation: upDown 3s ease-in-out infinite;
 }
 
-.gallery > img {
+.gallery>img {
   grid-area: 1/1;
   width: var(--s);
   aspect-ratio: 1.15;
@@ -61,37 +62,37 @@
   transition: 0.2s linear;
 }
 
-.gallery > img:hover {
+.gallery>img:hover {
   filter: grayscale(0);
   z-index: 1;
   --_t: 1.2;
 }
 
-.gallery > img:first-child {
+.gallery>img:first-child {
   --_y: calc(-100% - var(--g));
 }
 
-.gallery > img:nth-child(7) {
+.gallery>img:nth-child(7) {
   --_y: calc(100% + var(--g));
 }
 
-.gallery > img:nth-child(3),
-.gallery > img:nth-child(5) {
+.gallery>img:nth-child(3),
+.gallery>img:nth-child(5) {
   --_x: calc(-75% - 0.87 * var(--g));
 }
 
-.gallery > img:nth-child(4),
-.gallery > img:nth-child(6) {
+.gallery>img:nth-child(4),
+.gallery>img:nth-child(6) {
   --_x: calc(75% + 0.87 * var(--g));
 }
 
-.gallery > img:nth-child(3),
-.gallery > img:nth-child(4) {
+.gallery>img:nth-child(3),
+.gallery>img:nth-child(4) {
   --_y: calc(-50% - 0.5 * var(--g));
 }
 
-.gallery > img:nth-child(5),
-.gallery > img:nth-child(6) {
+.gallery>img:nth-child(5),
+.gallery>img:nth-child(6) {
   --_y: calc(50% + 0.5 * var(--g));
 }
 
@@ -364,8 +365,8 @@
 
 /* testimonial start */
 .bg_testimonial {
-  background-image: url("https://img.freepik.com/free-photo/close-up-mystery-box_23-2149631467.jpg?semt=ais_hybrid&w=740");
-  background-image: url("https://img.freepik.com/free-photo/close-up-mystery-box_23-2149631477.jpg?semt=ais_hybrid&w=740");
+  /* background-image: url("../images/testimonialBG2.avif"); */
+  background-image: url("../images/testimonialBG1.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -379,19 +380,23 @@
 .Home_contact_bg {
   width: 100%;
   height: auto;
-  background-image: url("https://img.freepik.com/premium-photo/startup-sme-small-business-entrepreneur-freelance-asian-woman-wearing-apron-using-laptop-box-receive-review-orders-online-prepare-pack-sell-customers-online-sme-business-ideas_265022-112639.jpg?ga=GA1.1.960358020.1744003470&w=740");
+  background-image: url("../images/HomeContactBG.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.721);
 }
+
 .input-home {
   transition: all 0.4s ease-in-out;
 }
+
 .input-home:hover {
   box-shadow: 0 2px 10px orange !important;
 }
+
 .input-home::placeholder {
   color: black;
 }
+
 /* HomeContact end */

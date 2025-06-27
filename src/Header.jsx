@@ -1,5 +1,4 @@
-import { X } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { FiMenu } from 'react-icons/fi';
 import { MdOutlineQrCodeScanner } from 'react-icons/md';

@@ -1,4 +1,3 @@
-import React from 'react'
 import "../assets/css/Contact.css";
 import { Link } from 'react-router-dom';
 import ContactInfo from './ContactInfo';
