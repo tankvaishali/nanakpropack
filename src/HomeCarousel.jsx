@@ -47,62 +47,62 @@ function HomeCarousel() {
                     <div className='' style={{ marginTop: "-200px" }}>
                         <Slider {...settings}>
                             <div className='col-lg-3 col-md-4 col-sm-7 col-7 p-4'>
-                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
+                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover',  backgroundSize: 'cover', height: '270px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
                                     <div style={{
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/homeCarouselImg1  (1).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (1).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px",height:"250px",width:"100%", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-3 col-md-4 col-sm-7 col-7 p-4'>
-                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
+                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover',  backgroundSize: 'cover', height: '270px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
                                     <div style={{
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/homeCarouselImg1  (2).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (2).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px",height:"250px",width:"100%", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-3 col-md-4 col-sm-7 col-7 p-4'>
-                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
+                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover',  backgroundSize: 'cover', height: '270px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
                                     <div style={{
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/homeCarouselImg1  (3).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (3).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px",height:"250px",width:"100%", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-3 col-md-4 col-sm-7 col-7 p-4'>
-                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
+                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover',  backgroundSize: 'cover', height: '270px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
                                     <div style={{
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/homeCarouselImg1  (4).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (4).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px",height:"250px",width:"100%", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-3 col-md-4 col-sm-7 col-7 p-4'>
-                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
+                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover',  backgroundSize: 'cover', height: '270px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
                                     <div style={{
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/homeCarouselImg1  (5).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (5).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px",height:"250px",width:"100%", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>
                             <div className='col-lg-3 col-md-4 col-sm-7 col-7 p-4'>
-                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
+                                <div style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover',  backgroundSize: 'cover', height: '270px', backgroundRepeat: 'no-repeat', backgroundPosition: 'center top' }}>
                                     <div style={{
                                         backdropFilter: "blur(5px)",
                                         padding: '10px 42px 5px 40px'
                                     }}>
-                                        <img src={require('./assets/images/homeCarouselImg1  (6).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
+                                        <img src={require('./assets/images/homeCarouselImg1  (6).png')} alt="not found" className='img-fluid' style={{ position: 'relative', top: "39px",height:"250px",width:"100%", zIndex: 100, border: '2px solid white', background: '#6c7079ab' }} />
                                     </div>
                                 </div>
                             </div>

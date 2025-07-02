@@ -69,13 +69,13 @@ function Testimonial() {
                       </div>
                       <div className="py-3 text-white pera">{x.description}</div>
                       <div
-                        className="rounded-circle mx-auto mt-4"
-                        style={{ width: "80px", height: "80px" }}
+                        className="rounded-5 mx-auto mt-4"
+                        style={{ width: "85px", height: "85px" }}
                       >
                         <img
                           src={x.img}
                           alt="not found"
-                          className="img-fluid w-100 h-100 rounded-circle object-fit-cover"
+                          className="img-fluid w-100 h-100 rounded-circle"
                         />
                       </div>
                       <div className="py-1 pt-2">
