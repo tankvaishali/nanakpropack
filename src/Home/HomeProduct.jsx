@@ -37,16 +37,16 @@ function HomeProduct() {
             img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_38_35 PM.png'),
         },
         {
+            name: 'Corrugated Craft Paper Box',
+            img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_47_26 PM.png'),
+        },
+        {
+            name: 'Printed Corrugated Box',
+            img: require('../assets/images/printed corrugated mailer box.png'),
+        },
+        {
             name: '14 feet by 18 feet by 18 feet',
             img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_44_49 PM.png'),
-        },
-        {
-            name: 'Corrugated Craft Paper Box',
-            img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_47_26 PM.png'),
-        },
-        {
-            name: 'Corrugated Craft Paper Box',
-            img: require('../assets/images/homeproduct_image/ChatGPT Image Jun 21, 2025, 03_47_26 PM.png'),
         },
         {
             name: 'Wooden Storage Divider Box',

@@ -107,11 +107,11 @@ export const Departments = [
             },
             {
                 MainName: 'Corrugated Box',
-                MainImage: require('../assets/images/corrugated-boxes.jpeg'),
+                MainImage: require('../assets/images/corrugated self lock with handle box.png'),
                 SubImageData: [
-                    require('../assets/images/corrugated-boxes.jpg'),
-                    require('../assets/images/corrugated-boxes1.jpg'),
-                    require('../assets/images/corrugated-boxes2.jpeg')
+                    require('../assets/images/types of corrugated box packaging (1).png'),
+                    require('../assets/images/types of corrugated box packaging (2).png'),
+                    require('../assets/images/corrugated boxes (3).png')
                 ],
                 ProductDetails: 'Corrugated sheets are durable, lightweight, and highly versatile materials widely used in packaging and shipping. Made from multiple layers of kraft paper with a fluted middle layer, they provide excellent cushioning, structural strength, and impact resistance. These sheets are ideal for protecting goods during transport, creating custom boxes, or even being used as partitions and liners.'
             },
@@ -147,11 +147,11 @@ export const Departments = [
             },
             {
                 MainName: 'Printed Corrugated Box',
-                MainImage: require('../assets/images/Printed_Corrugated_Box.jpg'),
+                MainImage: require('../assets/images/corrugated printed bento box.jpeg'),
                 SubImageData: [
-                    require('../assets/images/Printed_Corrugated_Box1.webp'),
-                    require('../assets/images/Printed_Corrugated_Box2.jpeg'),
-                    require('../assets/images/Printed_Corrugated_Box3.webp')
+                    require('../assets/images/printed corrugated mailer box.png'),
+                    require('../assets/images/corrugated printed boxes.png'),
+                    require('../assets/images/QR Code printed boxes.png')
                 ],
                 ProductDetails: 'Printed corrugated boxes offer vibrant and customizable designs, ideal for enhancing brand recognition and ensuring product protection.'
             },
@@ -226,11 +226,11 @@ export const Departments = [
         subimage: [
             {
                 MainName: 'Corrugated Box',
-                MainImage: require('../assets/images/corrugated-boxes.jpeg'),
+                MainImage: require('../assets/images/corrugated self lock with handle box.png'),
                 SubImageData: [
-                    require('../assets/images/corrugated-boxes.jpg'),
-                    require('../assets/images/corrugated-boxes1.jpg'),
-                    require('../assets/images/corrugated-boxes2.jpeg')
+                    require('../assets/images/types of corrugated box packaging (1).png'),
+                    require('../assets/images/types of corrugated box packaging (2).png'),
+                    require('../assets/images/corrugated boxes (3).png')
                 ],
                 ProductDetails: 'Corrugated sheets are durable, lightweight, and highly versatile materials widely used in packaging and shipping. Made from multiple layers of kraft paper with a fluted middle layer, they provide excellent cushioning, structural strength, and impact resistance. These sheets are ideal for protecting goods during transport, creating custom boxes, or even being used as partitions and liners.'
             },
@@ -294,11 +294,11 @@ export const Departments = [
             },
             {
                 MainName: 'Printed Corrugated Box',
-                MainImage: require('../assets/images/Printed_Corrugated_Box.jpg'),
+                MainImage: require('../assets/images/corrugated printed bento box.jpeg'),
                 SubImageData: [
-                    require('../assets/images/Printed_Corrugated_Box1.webp'),
-                    require('../assets/images/Printed_Corrugated_Box2.jpeg'),
-                    require('../assets/images/Printed_Corrugated_Box3.webp')
+                    require('../assets/images/printed corrugated mailer box.png'),
+                    require('../assets/images/corrugated printed boxes.png'),
+                    require('../assets/images/QR Code printed boxes.png')
                 ],
                 ProductDetails: 'Printed corrugated boxes offer vibrant and customizable designs, ideal for enhancing brand recognition and ensuring product protection.'
             },
