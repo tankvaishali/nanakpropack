@@ -41,7 +41,7 @@ body {
   z-index: 10000;
 }
 
-@media screen and (max-width:992px) {
+@media screen and (max-width: 992px) {
   .headermargin {
     margin-bottom: -80px;
     margin-top: 0px;
@@ -104,13 +104,116 @@ body {
 
 /* footer start */
 .footer_bg {
-  background: repeating-linear-gradient(90deg, transparent, #00701d) 0% 0% / 3em 3em #000000;
-  background-size: 100px 100px;
-  box-shadow: inset 0px 0px 1500px 1000px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  background-image: url("../src/assets/images/3d-rendering-abstract-black-white-background.jpg");
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0px 0px 1500px 1000px rgba(0, 26, 0, 0.297);
+  z-index: 0;
+}
+
+/* Add multiple bubbles using pseudo-elements */
+.footer_bg::before,
+.footer_bg::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.217);
+  animation: bubbleMove 15s infinite ease-in-out;
+  z-index: 1;
+}
+
+/* First bubble */
+.footer_bg::before {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+/* Second bubble */
+.footer_bg::after {
+  width: 50px;
+  height: 50px;
+  bottom: 30%;
+  right: 10%;
+  animation-delay: 5s;
+}
+
+/* Bubble animation keyframes */
+@keyframes bubbleMove {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(-50px) scale(1.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.3;
+  }
+}
+
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  animation: bubbleFloat 18s linear infinite;
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.b1 {
+  left: 10%;
+  animation-delay: 0s;
+}
+.b2 {
+  left: 25%;
+  animation-delay: 3s;
+}
+.b3 {
+  left: 40%;
+  animation-delay: 6s;
+}
+.b4 {
+  left: 55%;
+  animation-delay: 9s;
+}
+.b5 {
+  left: 70%;
+  animation-delay: 12s;
+}
+
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px) scale(1.1);
+    opacity: 0.7;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(-500px) scale(1.2);
+    opacity: 0;
+  }
 }
 
 .footericon {
-  border: 2px solid white;
   transition: all 0.3s ease-in-out;
   border-radius: 10px 0px 12px 0px;
   font-size: 19px;
@@ -118,7 +221,6 @@ body {
 
 .footericon:hover {
   border-radius: 50%;
-  border: 2px solid white;
 }
 
 .facebookicon {
@@ -133,12 +235,14 @@ body {
 }
 
 .instaicon {
-  background-image: linear-gradient(180deg,
-      #833ab4,
-      #c13584,
-      #e1306c,
-      #f77737,
-      #ffdc80);
+  background-image: linear-gradient(
+    180deg,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #f77737,
+    #ffdc80
+  );
 }
 
 .instaicon:hover {

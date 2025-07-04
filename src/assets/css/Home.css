@@ -21,7 +21,6 @@
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -50,7 +49,7 @@
   animation: upDown 3s ease-in-out infinite;
 }
 
-.gallery>img {
+.gallery > img {
   grid-area: 1/1;
   width: var(--s);
   aspect-ratio: 1.15;
@@ -62,37 +61,37 @@
   transition: 0.2s linear;
 }
 
-.gallery>img:hover {
+.gallery > img:hover {
   filter: grayscale(0);
   z-index: 1;
   --_t: 1.2;
 }
 
-.gallery>img:first-child {
+.gallery > img:first-child {
   --_y: calc(-100% - var(--g));
 }
 
-.gallery>img:nth-child(7) {
+.gallery > img:nth-child(7) {
   --_y: calc(100% + var(--g));
 }
 
-.gallery>img:nth-child(3),
-.gallery>img:nth-child(5) {
+.gallery > img:nth-child(3),
+.gallery > img:nth-child(5) {
   --_x: calc(-75% - 0.87 * var(--g));
 }
 
-.gallery>img:nth-child(4),
-.gallery>img:nth-child(6) {
+.gallery > img:nth-child(4),
+.gallery > img:nth-child(6) {
   --_x: calc(75% + 0.87 * var(--g));
 }
 
-.gallery>img:nth-child(3),
-.gallery>img:nth-child(4) {
+.gallery > img:nth-child(3),
+.gallery > img:nth-child(4) {
   --_y: calc(-50% - 0.5 * var(--g));
 }
 
-.gallery>img:nth-child(5),
-.gallery>img:nth-child(6) {
+.gallery > img:nth-child(5),
+.gallery > img:nth-child(6) {
   --_y: calc(50% + 0.5 * var(--g));
 }
 
@@ -328,7 +327,11 @@
 
 /* HomeProduct start */
 .product_box {
-  transition: all 0.5s ease;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out;
 }
 
 .product_img_wrapper {

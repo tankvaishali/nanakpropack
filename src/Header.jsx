@@ -78,36 +78,40 @@ function Header() {
 
       <div className='headermargin sticky-top'>
         <nav className="navbar navbar-expand-lg py-0" style={{ height: '80px' }}>
-          <div className="container bg-light mx-auto col-12 mt-lg-0 mt-2 align-items-center">
-            <Link className="navbar-brand col-2" to="/">
+          <div className="container bg-light mx-auto col-12 mt-lg-0 mt-2 position-relative d-flex justify-content-between align-items-center">
+
+            {/* Logo - Left */}
+            <Link className="navbar-brand" to="/">
               <div className='text-center'>
                 <img src={require('./assets/images/nanak_logo_BGremove.png')} alt="Logo" height={70} />
               </div>
             </Link>
-            <button className="btn d-lg-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-              <FiMenu size={24} />
-            </button>
-            <div className="d-none d-lg-block text-center justify-content-center col-8">
+
+            {/* Desktop Center Menu */}
+            <div className="d-none d-lg-block text-center col-lg-8">
               <ul className="navbar-nav mb-2 mb-lg-0 d-flex flex-row justify-content-center">
-                <li className="nav-item">
-                  <Link to={'/'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>Home</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to={'/companyinfo'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase text-nowrap' style={{ fontSize: '14px' }}>Company-Info</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to={'/product'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>Products</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to={'/contact'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase text-nowrap' style={{ fontSize: '14px' }}>Contact-Us</Link>
-                </li>
-                <li className="nav-item">
-                  <Link to={'/faq'} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>Faq</Link>
-                </li>
+                {List.map((item, index) => (
+                  <li key={index} className="nav-item">
+                    <Link to={item.path} className='text-decoration-none text-dark fw-bold mx-3 text-uppercase' style={{ fontSize: '14px' }}>{item.ListName}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
-            {/* QR Code icon */}
-            <div className='col-2 text-center fs-3'>
+
+            {/* QR Code Icon - Center (on small/medium screens) */}
+            <div className="d-lg-none position-absolute start-50 translate-middle-x fs-3">
+              <MdOutlineQrCodeScanner data-bs-toggle="modal" data-bs-target="#exampleModal" />
+            </div>
+
+            {/* Menu Icon - Right (only visible on small screens) */}
+            <div className='d-lg-none'>
+              <button className="btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                <FiMenu size={24} />
+              </button>
+            </div>
+
+            {/* QR Code for large screens - right aligned */}
+            <div className='d-none d-lg-block col-2 text-center fs-3'>
               <MdOutlineQrCodeScanner data-bs-toggle="modal" data-bs-target="#exampleModal" />
             </div>
           </div>

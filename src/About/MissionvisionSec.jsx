@@ -19,12 +19,17 @@ function MissionvisionSec() {
   ]
   return (
     <>
-      <div className="mission_bg " >
+      <div className="mission_bg">
+        <span className="bubble b1"></span>
+        <span className="bubble b2"></span>
+        <span className="bubble b3"></span>
+        <span className="bubble b4"></span>
+        <span className="bubble b5"></span>
         <div className="container py-5">
           <div className="row py-3">
             <div className="col-lg-3 col-12 col-md-6 p-4">
               <div className="h-100 d-flex flex-column text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
-                <div className="cardcss p-2 flex-grow-1 text-white">
+                <div className="cardcss p-4 flex-grow-1 text-white">
                   <div class="serviceicon">
                     <img src={""} alt="" className="img-fluid" />
                   </div>
@@ -36,7 +41,7 @@ function MissionvisionSec() {
             </div>
             <div className="col-lg-3 col-12 col-md-6 p-4 ">
               <div className="h-100 d-flex flex-column text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
-                <div className="cardcss p-2 flex-grow-1 text-white">
+                <div className="cardcss p-4 flex-grow-1 text-white">
                   <div class="serviceicon">
                     <img src={""} alt="" className="img-fluid" />
                   </div>

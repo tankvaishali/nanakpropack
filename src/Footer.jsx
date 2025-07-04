@@ -4,19 +4,15 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <div className='footer_bg'>
+      <span className="bubble b1"></span>
+      <span className="bubble b2"></span>
+      <span className="bubble b3"></span>
+      <span className="bubble b4"></span>
+      <span className="bubble b5"></span>
       <div className="container ">
-        <div className="row border-bottom border-secondary ">
-          <div className="col-12 col-lg-4  border-end my-4 border-2" >
-            <div className="h-100 text-center p-1" >
-              <div className='w-50 mx-auto'>
-                <img src={require("./assets/images/ImportedPhoto_1744001267180.jpg")} alt="" className='img-fluid  w-100 h-100' />
-              </div>
-              <div className='text-white pt-3 pera'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo enim sed adipisci sequi quae sint dicta! Ipsum porro aut sit.</div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-4 pt-4 pt-lg-5 pb-0 pb-lg-3">
-            <div className="h-100 text-white text-center">
+        <div className="row border-bottom border-secondary py-3 py-lg-0">
+          <div className="col-6 col-lg-4 pt-4 pt-lg-5 pb-0 pb-lg-3 order-2 order-lg-1">
+            <div className="h-100 text-white text-center" >
               <div>
                 <h2 className="border-bottom border-success mx-auto border-3 pb-2" style={{ width: "fit-content" }}>Useful Links</h2>
               </div>
@@ -27,7 +23,28 @@ function Footer() {
               <div className='py-1'><Link to={"/faq"} className='text-white text-decoration-none pera'>Faq</Link></div>
             </div>
           </div>
-          <div className="col-12 col-lg-4 pt-4 pt-lg-5 pb-0 pb-lg-3">
+          <div className="col-12 col-lg-4   my-4 order-1 order-lg-2" >
+            <div className="h-100 text-center p-3" style={{
+              backgroundColor: 'rgba(255, 255, 255, 0.05)',
+              backdropFilter: 'blur(10px)',
+              WebkitBackdropFilter: 'blur(10px)',
+              // border: '1px solid #ccc',
+              borderRadius: '10px'
+            }}>
+              <div className='w-50 mx-auto'>
+                <img
+                  src={require("./assets/images/ImportedPhoto_1744001267180.jpg")}
+                  alt="Example"
+                  className='img-fluid w-100 h-auto rounded'
+                />
+              </div>
+              <div className='text-white pt-3 pera'>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo enim sed adipisci sequi quae sint dicta! Ipsum porro aut sit.
+              </div>
+            </div>
+
+          </div>
+          <div className="col-6 col-lg-4 pt-4 pt-lg-5 pb-0 pb-lg-3 order-3">
             <div className="h-100 text-white text-center">
               <div>
                 <h2 className="border-bottom border-success mx-auto border-3 pb-2" style={{ width: "fit-content" }}>Social Media</h2>
